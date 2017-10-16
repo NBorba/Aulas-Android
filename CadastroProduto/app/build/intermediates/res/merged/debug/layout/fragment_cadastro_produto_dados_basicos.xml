@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    tools:context=".view.CadastroProduto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/title_fragmentdadosbasicos" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#90909090"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/CadastroProdutoDadosBasico_RelativeLayoutCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/CadastroProdutoDadosBasico_txtNomeProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CadastroProdutoDadosBasicos_title_nomeproduto" />
+
+        <EditText
+            android:id="@+id/CadastroProdutoDadosBasico_etNomeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtNomeProduto"
+            android:hint="@string/CadastroProdutoDadosBasicos_hint_nomeproduto"
+            android:inputType="textCapCharacters" />
+
+        <TextView
+            android:id="@+id/CadastroProdutoDadosBasico_txtDescricaoProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_etNomeProduto"
+            android:text="@string/CadastroProdutoDadosBasicos_title_descricaoproduto" />
+
+        <EditText
+            android:id="@+id/CadastroProdutoDadosBasico_etDescricaoProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtDescricaoProduto"
+            android:hint="@string/CadastroProdutoDadosBasicos_hint_descricaoproduto"
+            android:inputType="textCapCharacters"
+            android:nextFocusDown="@+id/CadastroClienteCadastrais_etRazaoSocial" />
+
+        <TextView
+            android:id="@+id/CadastroProdutoDadosBasico_txtMarcaProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_etDescricaoProduto"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:text="@string/CadastroProdutoDadosBasicos_title_marcaproduto" />
+
+        <Spinner
+            android:id="@+id/CadastroProdutoDadosBasico_spinnerMarcaProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtMarcaProduto"
+            android:layout_marginTop="11dp"
+            android:nextFocusDown="@+id/CadastroClienteCadastrais_etTelefone" />
+
+        <Button
+            android:id="@+id/CadastroProdutoDadosBasico_btnCadastraMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtMarcaProduto"
+            android:layout_toEndOf="@id/CadastroProdutoDadosBasico_spinnerMarcaProduto"
+            android:layout_toRightOf="@id/CadastroProdutoDadosBasico_spinnerMarcaProduto"
+            android:text="@string/btnMais" />
+
+        <TextView
+            android:id="@+id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_btnCadastraMarca"
+            android:text="@string/CadastroProdutoDadosBasicos_title_PrecoCompra"
+            app:layout_widthPercent="50%" />
+
+        <EditText
+            android:id="@+id/CadastroProdutoDadosBasico_etPrecoCompraProduto"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
+            android:hint="@string/CadastroProdutoDadosBasicos_hint_PrecoCompra"
+            android:inputType="numberDecimal"
+            app:layout_widthPercent="50%" />
+
+        <TextView
+            android:id="@+id/CadastroProdutoDadosBasico_txtPrecoVendaProduto"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_btnCadastraMarca"
+            android:layout_toEndOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
+            android:layout_toRightOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
+            android:text="@string/CadastroProdutoDadosBasicos_title_PrecoVenda"
+            app:layout_widthPercent="50%" />
+
+        <EditText
+            android:id="@+id/CadastroProdutoDadosBasico_etPrecoVendaProduto"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtPrecoVendaProduto"
+            android:layout_toEndOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
+            android:layout_toRightOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
+            android:hint="@string/CadastroProdutoDadosBasicos_hint_PrecoVenda"
+            android:inputType="numberDecimal"
+            app:layout_widthPercent="50%" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/CadastroProdutoDadosBasico_btnProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:src="@android:drawable/ic_media_play"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    tools:context=".view.CadastroProduto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/title_fragmentdadosadicionais" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#90909090"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/CadastroProdutoDadosAdicionais_RelativeLayoutCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/CadastroProdutoDadosAdicionais_txtTituloFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CadastroProdutoDadosAdicionais_title_FotoProduto" />
+
+        <ImageView
+            android:id="@+id/CadastroProdutoDadosAdicionais_ImagemProduto"
+            android:layout_below="@id/CadastroProdutoDadosAdicionais_txtTituloFoto"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/placeholder_imagem"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="42%" />
+
+        <Button
+            android:id="@+id/CadastroProdutoDadosAdicionais_btnTirarFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosAdicionais_ImagemProduto"
+            android:layout_marginTop="10dp"
+            android:text="@string/btnTirarFoto" />
+
+        <Switch
+            android:id="@+id/CadastroProdutoDadosAdicionais_switchProdutoAtivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosAdicionais_btnTirarFoto"
+            android:layout_marginTop="20dp"
+            android:text="@string/CadastroProdutoDadosAdicionais_title_ProdutoAtivo" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/CadastroClienteVendas_btnCadastrarProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/btnCadastrar" />
+    </RelativeLayout>
+</LinearLayout>

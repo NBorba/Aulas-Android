@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\6d29e04efebb7c95186eb78d1f3511d2f66b2673\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\6d29e04efebb7c95186eb78d1f3511d2f66b2673\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    }
+]

@@ -1,0 +1,7 @@
+#Mon Oct 16 19:34:23 BRST 2017
+base.0=C\:\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b9f6e675cfa42ed45cd62ebe02fc1ff14c8ae92e
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8a619bc55de50b31fd5b7bb463869d949eef5cd9\\classes.dex
+base.1=C\:\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8a619bc55de50b31fd5b7bb463869d949eef5cd9
+file.0=C\:\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b9f6e675cfa42ed45cd62ebe02fc1ff14c8ae92e\\classes.dex

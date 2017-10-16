@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Cadastro de Produtos</string>
+
+    <!-- Botões -->
+    <string name="btnOK">OK</string>
+    <string name="btnMais">+</string>
+    <string name="btnTirarFoto">Tirar foto</string>
+    <string name="btnCadastrar">Cadastrar</string>
+
+    <!-- Erros -->
+    <string name="title_erro">Erro</string>
+    <string name="erro_semmarca">Você deve selecionar uma marca antes de continuar</string>
+    <string name="erro_semfoto">Tire uma foto do produto antes de continuar</string>
+    <string name="erro_campovazio">Este campo não pode ficar vazio</string>
+    <string name="erro_valorzerado">Você não pode deixar o valor do campo menor ou igual a 0</string>
+    <string name="erro_semimplementacao">Ainda não implementado</string>
+    <string name="erro_implementacaoclasse">Erro ao implementar classe %1$s</string>
+
+    <!-- Mensagens -->
+    <string name="mensagem_produtocadastradosucesso">Produto cadastrado com sucesso!</string>
+
+    <!-- MainActivity -->
+    <string name="MainActivity_btnCadastrarProduto">Cadastrar um novo produto</string>
+
+    <string name="title_fragmentdadosbasicos">Dados básicos do produto</string>
+    <string name="title_fragmentdadosadicionais">Dados adicionais do produto</string>
+
+
+    <!-- CadastroProdutoDadosBasicos -->
+    <string name="CadastroProdutoDadosBasicos_title_nomeproduto">Nome do produto</string>
+    <string name="CadastroProdutoDadosBasicos_hint_nomeproduto">EX: PENDRIVE 8GB</string>
+    <string name="CadastroProdutoDadosBasicos_title_descricaoproduto">Descrição do produto</string>
+    <string name="CadastroProdutoDadosBasicos_hint_descricaoproduto">EX: ARMAZENADOR DE DADOS</string>
+    <string name="CadastroProdutoDadosBasicos_title_marcaproduto">Marca do produto</string>
+    <string-array name="CadastroProdutoDadosBasicos_array_marcas">
+        <item>Selecione uma marca</item>
+        <item>Apple</item>
+        <item>Kingston</item>
+        <item>Microsoft</item>
+        <item>Sony</item>
+    </string-array>
+    <string name="CadastroProdutoDadosBasicos_title_PrecoCompra">Preço de compra</string>
+    <string name="CadastroProdutoDadosBasicos_hint_PrecoCompra">EX: 2.00</string>
+    <string name="CadastroProdutoDadosBasicos_title_PrecoVenda">Preço de venda</string>
+    <string name="CadastroProdutoDadosBasicos_hint_PrecoVenda">EX: 4.00</string>
+
+    <!-- CadastroProdutoDadosAdicionais -->
+    <string name="CadastroProdutoDadosAdicionais_title_FotoProduto">Foto do produto</string>
+    <string name="CadastroProdutoDadosAdicionais_title_ProdutoAtivo">Produto ativo?</string>
+</resources>
