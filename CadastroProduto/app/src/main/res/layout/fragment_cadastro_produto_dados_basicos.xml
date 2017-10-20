@@ -68,8 +68,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/CadastroProdutoDadosBasico_etDescricaoProduto"
-            android:layout_marginLeft="7dp"
-            android:layout_marginStart="7dp"
             android:text="@string/CadastroProdutoDadosBasicos_title_marcaproduto" />
 
         <Spinner
@@ -87,12 +85,22 @@
             android:layout_below="@id/CadastroProdutoDadosBasico_txtMarcaProduto"
             android:layout_toEndOf="@id/CadastroProdutoDadosBasico_spinnerMarcaProduto"
             android:layout_toRightOf="@id/CadastroProdutoDadosBasico_spinnerMarcaProduto"
-            android:text="@string/btnMais" />
+            android:text="@string/botaoMais" />
+
+        <TextView
+            android:id="@+id/CadastroProdutoDadosBasico_txtMarcaSelecionada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CadastroProdutoDadosBasico_btnCadastraMarca"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/CadastroProdutoDadosBasico_title_MarcaSelecionada"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
             android:layout_height="wrap_content"
-            android:layout_below="@id/CadastroProdutoDadosBasico_btnCadastraMarca"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtMarcaSelecionada"
             android:text="@string/CadastroProdutoDadosBasicos_title_PrecoCompra"
             app:layout_widthPercent="50%" />
 
@@ -107,7 +115,7 @@
         <TextView
             android:id="@+id/CadastroProdutoDadosBasico_txtPrecoVendaProduto"
             android:layout_height="wrap_content"
-            android:layout_below="@id/CadastroProdutoDadosBasico_btnCadastraMarca"
+            android:layout_below="@id/CadastroProdutoDadosBasico_txtMarcaSelecionada"
             android:layout_toEndOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
             android:layout_toRightOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
             android:text="@string/CadastroProdutoDadosBasicos_title_PrecoVenda"

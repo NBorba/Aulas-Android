@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\layout-v11\\notification_template_big_media.xml"
+        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v11\\notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v11\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\dcea64d66f6d8a639a1f926262aab748995813af\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     }
 ]

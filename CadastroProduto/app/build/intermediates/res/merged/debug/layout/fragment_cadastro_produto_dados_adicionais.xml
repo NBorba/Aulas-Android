@@ -43,6 +43,7 @@
             android:id="@+id/CadastroProdutoDadosAdicionais_ImagemProduto"
             android:layout_below="@id/CadastroProdutoDadosAdicionais_txtTituloFoto"
             android:layout_marginTop="10dp"
+            android:contentDescription="@string/CadastroProdutoDadosAdicionais_contentdescription_FotoProduto"
             android:src="@drawable/placeholder_imagem"
             app:layout_heightPercent="30%"
             app:layout_widthPercent="42%" />
@@ -53,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/CadastroProdutoDadosAdicionais_ImagemProduto"
             android:layout_marginTop="10dp"
-            android:text="@string/btnTirarFoto" />
+            android:text="@string/botaoTirarFoto" />
 
         <Switch
             android:id="@+id/CadastroProdutoDadosAdicionais_switchProdutoAtivo"
@@ -79,6 +80,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:text="@string/btnCadastrar" />
+            android:text="@string/botaoContinuar" />
     </RelativeLayout>
 </LinearLayout>

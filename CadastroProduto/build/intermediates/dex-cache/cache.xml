@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\CadastroProduto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="c07955a41b30d51c5954230c6a33fd8fc1bac148">
-        <dex dex="C:\CadastroProduto\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8a619bc55de50b31fd5b7bb463869d949eef5cd9\classes.dex" />
+        sha1="e8837d123384d6057ef3352a70daa3509c47a9f0">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6c6f2b7999147d8e7aa827f2dcea919c89f5458f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\CadastroProduto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\CadastroProduto\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b9f6e675cfa42ed45cd62ebe02fc1ff14c8ae92e\classes.dex" />
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_68a21e00dd03a68f752bfe4fda9b45b169ae59e3\classes.dex" />
     </item>
 
 </items>

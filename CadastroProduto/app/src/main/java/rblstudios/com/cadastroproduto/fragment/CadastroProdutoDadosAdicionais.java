@@ -24,13 +24,14 @@ import android.widget.Spinner;
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
+import rblstudios.com.cadastroproduto.view.RevisaoDados;
 
 /**
  * Criado por renan.lucas em 12/10/2017.
  */
 
 public class CadastroProdutoDadosAdicionais extends Fragment {
-    private FragmentoCallback mCallback;
+    private FragmentoCallback callback;
 
     private static final int CAMERA_REQUEST = 1888;
     private ImageView imgImagemProduto;
@@ -64,7 +65,7 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
 
         // Implementa o callback
         try {
-            mCallback = (FragmentoCallback) context;
+            callback = (FragmentoCallback) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString()
                     + getString(R.string.erro_implementacaoclasse, "ComErroDeValidacao"));
@@ -98,12 +99,12 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
             @Override
             public void onClick(View view) {
                 if (validaCampos()) {
-                    AlertDialog.Builder construtorAlerta = new AlertDialog.Builder(getContext());
+                    /*AlertDialog.Builder construtorAlerta = new AlertDialog.Builder(getContext());
                     construtorAlerta.setMessage(getString(R.string.mensagem_produtocadastradosucesso));
                     construtorAlerta.setCancelable(true);
 
                     construtorAlerta.setPositiveButton(
-                            getString(R.string.btnOK),
+                            getString(R.string.botaoOK),
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     getActivity().finish();
@@ -111,7 +112,13 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
                             });
 
                     AlertDialog alerta = construtorAlerta.create();
-                    alerta.show();
+                    alerta.show();*/
+
+                    Intent intent = new Intent(getActivity(), RevisaoDados.class);
+                    intent.putExtra("nomeProduto", etNomeProduto.getText().toString());
+                    intent.putExtra("descricaoProduto", etDescricaoProduto.getText().toString());
+                    intent.putExtra("marcaProduto", spinnerMarcaProduto.getSelectedItem().toString());
+                    startActivity(intent);
                 }
             }
         });
@@ -160,15 +167,16 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
         }
 
         if (spinnerMarcaProduto.getSelectedItemId() == 0) {
-            ViewUtil.criaEMostraAlert(this.getContext(), getString(R.string.title_erro), getString(R.string.erro_semmarca), getString(R.string.btnOK), true);
+            ViewUtil.criaEMostraAlert(this.getContext(), getString(R.string.title_erro),
+                    getString(R.string.erro_semmarca), getString(R.string.botaoOK), true);
             erroFragmentoUm = true;
         }
 
         // Quando tem erro em algum dos fragmentos muda a posição da tela de acordo com a tela que o erro está
         if (erroFragmentoDois && erroFragmentoUm) {
-            mCallback.posicaoDeTela(1);
-        } else {
-            mCallback.posicaoDeTela(0);
+            callback.posicaoDeTela(1);
+        } else if (erroFragmentoUm) {
+            callback.posicaoDeTela(0);
         }
 
         return !erroFragmentoUm && !erroFragmentoDois;

@@ -2,10 +2,11 @@
     <string name="app_name">Cadastro de Produtos</string>
 
     <!-- Botões -->
-    <string name="btnOK">OK</string>
-    <string name="btnMais">+</string>
-    <string name="btnTirarFoto">Tirar foto</string>
-    <string name="btnCadastrar">Cadastrar</string>
+    <string name="botaoCadastrar">Cadastrar</string>
+    <string name="botaoContinuar">Continuar</string>
+    <string name="botaoMais">+</string>
+    <string name="botaoOK">OK</string>
+    <string name="botaoTirarFoto">Tirar foto</string>
 
     <!-- Erros -->
     <string name="title_erro">Erro</string>
@@ -25,7 +26,6 @@
     <string name="title_fragmentdadosbasicos">Dados básicos do produto</string>
     <string name="title_fragmentdadosadicionais">Dados adicionais do produto</string>
 
-
     <!-- CadastroProdutoDadosBasicos -->
     <string name="CadastroProdutoDadosBasicos_title_nomeproduto">Nome do produto</string>
     <string name="CadastroProdutoDadosBasicos_hint_nomeproduto">EX: PENDRIVE 8GB</string>
@@ -39,6 +39,8 @@
         <item>Microsoft</item>
         <item>Sony</item>
     </string-array>
+    <string name="CadastroProdutoDadosBasico_title_MarcaSelecionada">Nenhuma marca selecionada</string>
+    <string name="CadastroProdutoDadosBasico_title_MarcaSelecao">Marca selecionada: %1$s</string>
     <string name="CadastroProdutoDadosBasicos_title_PrecoCompra">Preço de compra</string>
     <string name="CadastroProdutoDadosBasicos_hint_PrecoCompra">EX: 2.00</string>
     <string name="CadastroProdutoDadosBasicos_title_PrecoVenda">Preço de venda</string>
@@ -46,5 +48,16 @@
 
     <!-- CadastroProdutoDadosAdicionais -->
     <string name="CadastroProdutoDadosAdicionais_title_FotoProduto">Foto do produto</string>
+    <string name="CadastroProdutoDadosAdicionais_contentdescription_FotoProduto">Tire uma foto do produto</string>
     <string name="CadastroProdutoDadosAdicionais_title_ProdutoAtivo">Produto ativo?</string>
+
+    <!-- RevisaoDados -->
+    <string name="RevisaoDados_title_titulo">Revise os dados</string>
+    <string name="RevisaoDados_title_subtitulo">Confirme os dados do produto para finalizar o cadastro, ou aperte em \'Voltar\' para realizar uma alteração.</string>
+    <string name="RevisaoDados_title_nome">Nome do produto:</string>
+    <string name="RevisaoDados_placeholder_nome">Nenhum produto encontrado</string>
+    <string name="RevisaoDados_title_descricao">Descricao do produto:</string>
+    <string name="RevisaoDados_placeholder_descricao">Nenhuma descrição encontrada</string>
+    <string name="RevisaoDados_title_marca">Marca do produto:</string>
+    <string name="RevisaoDados_placeholder_marca">Nenhuma marca selecionada</string>
 </resources>

@@ -7,9 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
@@ -22,11 +24,12 @@ import rblstudios.com.cadastroproduto.util.ViewUtil;
 
 public class CadastroProdutoDadosBasicos extends Fragment {
 
-    private FragmentoCallback mCallback;
+    private FragmentoCallback callback;
 
     private Button btnCadastrarMarca;
     private FloatingActionButton btnProximo;
     private Spinner spinnerMarcaProduto;
+    private TextView txtMarcaSelecionada;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,7 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         // Popula spinner com base na string em Resources
         popularSpinners(rootView);
 
+        definirListenerSpinner();
         definirListenerBotoes();
 
         return rootView;
@@ -53,7 +57,7 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         super.onAttach(context);
         // Implementa o callback
         try {
-            mCallback = (FragmentoCallback) context;
+            callback = (FragmentoCallback) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString()
                     + getString(R.string.erro_implementacaoclasse, "ComErroDeValidacao"));
@@ -64,6 +68,7 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         btnCadastrarMarca = (Button) rootView.findViewById(R.id.CadastroProdutoDadosBasico_btnCadastraMarca);
         btnProximo = (FloatingActionButton) rootView.findViewById(R.id.CadastroProdutoDadosBasico_btnProximo);
         spinnerMarcaProduto = (Spinner) rootView.findViewById(R.id.CadastroProdutoDadosBasico_spinnerMarcaProduto);
+        txtMarcaSelecionada = (TextView) rootView.findViewById(R.id.CadastroProdutoDadosBasico_txtMarcaSelecionada);
     }
 
     private void popularSpinners(View rootView) {
@@ -72,6 +77,26 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         adaptadorMarcas.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinnerMarcaProduto.setAdapter(adaptadorMarcas);
+    }
+
+    private void definirListenerSpinner() {
+        spinnerMarcaProduto.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // Se o item clicado foi zero, temos que mostrar que nenhuma marca foi selecionada
+                if (position == 0) {
+                    txtMarcaSelecionada.setText(getString(R.string.CadastroProdutoDadosBasico_title_MarcaSelecionada));
+                } else {
+                    txtMarcaSelecionada.setText(getString(R.string.CadastroProdutoDadosBasico_title_MarcaSelecao,
+                            spinnerMarcaProduto.getSelectedItem().toString()));
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                txtMarcaSelecionada.setText(getString(R.string.CadastroProdutoDadosBasico_title_MarcaSelecionada));
+            }
+        });
     }
 
     private void definirListenerBotoes() {
@@ -86,7 +111,7 @@ public class CadastroProdutoDadosBasicos extends Fragment {
             @Override
             public void onClick(View v) {
                 ViewUtil.esconderTeclado(getActivity());
-                mCallback.posicaoDeTela(1); // Vai para o fragmento 1
+                callback.posicaoDeTela(1); // Vai para o fragmento 1
             }
         });
     }
