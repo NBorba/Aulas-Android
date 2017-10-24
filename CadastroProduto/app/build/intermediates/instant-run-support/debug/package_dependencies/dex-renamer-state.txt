@@ -1,4 +1,4 @@
-#Fri Oct 20 21:31:34 BRST 2017
+#Mon Oct 23 19:14:45 BRST 2017
 file.2=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_9bd59097bbd5c6083b30f4006a2616be4034ac2b\\classes.dex
 base.2=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_9bd59097bbd5c6083b30f4006a2616be4034ac2b
 file.1=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_95366de156c83df6442e25e20cf87e3d1deb14a6\\classes.dex

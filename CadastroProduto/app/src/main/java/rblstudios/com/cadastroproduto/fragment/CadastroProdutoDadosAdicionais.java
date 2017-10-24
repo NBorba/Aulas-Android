@@ -23,6 +23,7 @@ import android.widget.Spinner;
 
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
 import rblstudios.com.cadastroproduto.view.RevisaoDados;
 
@@ -35,6 +36,7 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
 
     private static final int CAMERA_REQUEST = 1888;
     private ImageView imgImagemProduto;
+    private Bitmap bitmapProduto;
     private Button btnTirarFoto, btnCadastrar;
 
     // Fragmento de dados de basicos
@@ -87,6 +89,7 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
     }
 
     private void defineListenerBotoes() {
+        // Tira a foto e salva
         btnTirarFoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -95,29 +98,19 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
             }
         });
 
+        // Envia para a tela de revisao
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (validaCampos()) {
-                    /*AlertDialog.Builder construtorAlerta = new AlertDialog.Builder(getContext());
-                    construtorAlerta.setMessage(getString(R.string.mensagem_produtocadastradosucesso));
-                    construtorAlerta.setCancelable(true);
-
-                    construtorAlerta.setPositiveButton(
-                            getString(R.string.botaoOK),
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    getActivity().finish();
-                                }
-                            });
-
-                    AlertDialog alerta = construtorAlerta.create();
-                    alerta.show();*/
-
                     Intent intent = new Intent(getActivity(), RevisaoDados.class);
                     intent.putExtra("nomeProduto", etNomeProduto.getText().toString());
                     intent.putExtra("descricaoProduto", etDescricaoProduto.getText().toString());
                     intent.putExtra("marcaProduto", spinnerMarcaProduto.getSelectedItem().toString());
+                    intent.putExtra("precoCompraProduto", getString(R.string.mensagem_precoreal, etPrecoCompra.getText().toString()));
+                    intent.putExtra("precoVendaProduto", getString(R.string.mensagem_precoreal, etPrecoVenda.getText().toString()));
+                    intent.putExtra("fotoProduto", Util.converteBitmapParaByteArray(bitmapProduto));
+
                     startActivity(intent);
                 }
             }
@@ -127,8 +120,8 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
-            Bitmap photo = (Bitmap) data.getExtras().get("data");
-            imgImagemProduto.setImageBitmap(photo);
+            bitmapProduto = (Bitmap) data.getExtras().get("data");
+            imgImagemProduto.setImageBitmap(bitmapProduto);
         }
     }
 
@@ -166,10 +159,18 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
             erroFragmentoUm = true;
         }
 
+        // Marca do produto
         if (spinnerMarcaProduto.getSelectedItemId() == 0) {
             ViewUtil.criaEMostraAlert(this.getContext(), getString(R.string.title_erro),
                     getString(R.string.erro_semmarca), getString(R.string.botaoOK), true);
             erroFragmentoUm = true;
+        }
+
+        // Foto do produto
+        if (bitmapProduto == null) {
+            ViewUtil.criaEMostraAlert(this.getContext(), getString(R.string.title_erro),
+                    getString(R.string.erro_semfoto), getString(R.string.botaoOK), true);
+            erroFragmentoDois = true;
         }
 
         // Quando tem erro em algum dos fragmentos muda a posição da tela de acordo com a tela que o erro está

@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/RevisaoDados_title_titulo"
         android:textSize="23sp" />
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/RevisaoDados_txtTitulo"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:fontFamily="sans-serif-light"
         android:text="@string/RevisaoDados_title_subtitulo"
         android:textSize="12sp" />
@@ -52,46 +54,133 @@
             android:layout_marginTop="25dp"
             android:src="@drawable/placeholder_imagem" />
 
-        <TextView
-            android:id="@+id/RevisaoDados_txtNome"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/RevisaoDados_RelativeNomeProduto"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/RevisaoDados_imgProduto"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/RevisaoDados_placeholder_nome"
-            android:textSize="16sp" />
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/RevisaoDados_txtMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/RevisaoDados_title_marca"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/RevisaoDados_txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/RevisaoDados_txtMarca"
+                android:layout_toRightOf="@id/RevisaoDados_txtMarca"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/RevisaoDados_placeholder_nome"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/RevisaoDados_txtDescricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/RevisaoDados_txtNome"
+            android:layout_below="@id/RevisaoDados_RelativeNomeProduto"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-thin"
             android:text="@string/RevisaoDados_placeholder_descricao" />
 
-        <TextView
-            android:id="@+id/RevisaoDados_txtTitleMarca"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <View
+            android:id="@+id/RevisaoDados_divisoriaDois"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
             android:layout_below="@id/RevisaoDados_txtDescricao"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:text="@string/RevisaoDados_title_marca"
-            android:textStyle="bold" />
+            android:background="#90909090"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
 
-        <TextView
-            android:id="@+id/RevisaoDados_txtMarca"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/RevisaoDados_RelativePrecoCompra"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/RevisaoDados_txtDescricao"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_toEndOf="@id/RevisaoDados_txtTitleMarca"
-            android:layout_toRightOf="@id/RevisaoDados_txtTitleMarca"
-            android:text="@string/RevisaoDados_placeholder_marca" />
+            android:layout_below="@id/RevisaoDados_divisoriaDois"
+            android:gravity="center_horizontal">
 
+            <TextView
+                android:id="@+id/RevisaoDados_txtTitlePrecoCompra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/RevisaoDados_title_precoCompra"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/RevisaoDados_txtPrecoCompra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/RevisaoDados_txtTitlePrecoCompra"
+                android:layout_toRightOf="@id/RevisaoDados_txtTitlePrecoCompra"
+                android:text="@string/RevisaoDados_placeholder_preco" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RevisaoDados_RelativePrecoVenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RevisaoDados_RelativePrecoCompra"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/RevisaoDados_txtTitlePrecoVenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/RevisaoDados_title_precoVenda"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RevisaoDados_txtPrecoVenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/RevisaoDados_txtTitlePrecoVenda"
+                android:layout_toRightOf="@id/RevisaoDados_txtTitlePrecoVenda"
+                android:text="@string/RevisaoDados_placeholder_preco" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/RevisaoDados_btnVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".5"
+                android:background="@drawable/btntransparentecomborda"
+                android:text="@string/botaoVoltar" />
+
+            <Button
+                android:id="@+id/RevisaoDados_btnCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight=".5"
+                android:background="@drawable/btntransparentecomborda"
+                android:text="@string/botaoCadastrar" />
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

@@ -1,4 +1,4 @@
-#Fri Oct 20 21:40:21 BRST 2017
+#Mon Oct 23 21:59:09 BRST 2017
 base.0=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_68a21e00dd03a68f752bfe4fda9b45b169ae59e3
 renamed.1=classes2.dex
 renamed.0=classes.dex

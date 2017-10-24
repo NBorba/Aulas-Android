@@ -7,9 +7,13 @@
     <string name="botaoMais">+</string>
     <string name="botaoOK">OK</string>
     <string name="botaoTirarFoto">Tirar foto</string>
+    <string name="botaoVoltar">Voltar</string>
+
+    <!-- Títulos -->
+    <string name="title_erro">Erro</string>
+    <string name="title_sucesso">Sucesso</string>
 
     <!-- Erros -->
-    <string name="title_erro">Erro</string>
     <string name="erro_semmarca">Você deve selecionar uma marca antes de continuar</string>
     <string name="erro_semfoto">Tire uma foto do produto antes de continuar</string>
     <string name="erro_campovazio">Este campo não pode ficar vazio</string>
@@ -19,6 +23,7 @@
 
     <!-- Mensagens -->
     <string name="mensagem_produtocadastradosucesso">Produto cadastrado com sucesso!</string>
+    <string name="mensagem_precoreal">R$%1$s</string>
 
     <!-- MainActivity -->
     <string name="MainActivity_btnCadastrarProduto">Cadastrar um novo produto</string>
@@ -60,4 +65,7 @@
     <string name="RevisaoDados_placeholder_descricao">Nenhuma descrição encontrada</string>
     <string name="RevisaoDados_title_marca">Marca do produto:</string>
     <string name="RevisaoDados_placeholder_marca">Nenhuma marca selecionada</string>
+    <string name="RevisaoDados_title_precoCompra">Preço compra: </string>
+    <string name="RevisaoDados_placeholder_preco">R$0</string>
+    <string name="RevisaoDados_title_precoVenda">Preço venda:</string>
 </resources>

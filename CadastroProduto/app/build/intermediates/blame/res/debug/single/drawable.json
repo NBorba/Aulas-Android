@@ -84,6 +84,10 @@
         "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
+        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btntransparentecomborda.xml",
+        "source": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\src\\main\\res\\drawable\\btntransparentecomborda.xml"
+    },
+    {
         "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
