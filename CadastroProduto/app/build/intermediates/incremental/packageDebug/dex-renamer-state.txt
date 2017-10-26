@@ -1,7 +1,7 @@
-#Mon Oct 23 21:59:09 BRST 2017
-base.0=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_68a21e00dd03a68f752bfe4fda9b45b169ae59e3
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6c6f2b7999147d8e7aa827f2dcea919c89f5458f\\classes.dex
-base.1=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6c6f2b7999147d8e7aa827f2dcea919c89f5458f
-file.0=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_68a21e00dd03a68f752bfe4fda9b45b169ae59e3\\classes.dex
+#Thu Oct 26 02:07:16 BRST 2017
+base.0=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82e641a14efef3e2c14e4ae8c92d7f80ee941e8a
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ee718d529916a4cf7ddc093eef6698222bf62c91/classes.dex
+base.1=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ee718d529916a4cf7ddc093eef6698222bf62c91
+file.0=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82e641a14efef3e2c14e4ae8c92d7f80ee941e8a/classes.dex

@@ -5,4 +5,7 @@
     <color name="colorAccent">#256F5B</color>
     <color name="cinza">#dcdcdc</color>
     <color name="cinza_escuro">#bcbcbc</color>
+    <color name="verde">#03ce09</color>
+    <color name="vermelho">#ff0000</color>
+    <color name="preto">#000000</color>
 </resources>

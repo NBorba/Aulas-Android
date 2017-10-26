@@ -1,115 +1,127 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:2:1-34:12
 	package
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:3:5-45
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:7:5-23:19
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1c2de999de22ceff5dc05652bc9482104c2ae432\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\710301c8f5a45c8d9769051bec3c84d4b44d5026\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\13d0df1fe75eea22d034b4659cc32e4258f3d87a\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\81e0f88bc6b990fc8a535d976efabcc0be84ba0a\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\510d57fb3fd332168b0dee7a093000aee113dd85\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\7ffd37816b6a9780e2044cb88b3e9b24b7d47774\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\531591f432e4b22d117d59630fc67fd5b9c186d7\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\b68c692f79e1624b03abdd8515079578d23e258c\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\079086f5a7d525a03022d0f0aa38ade0e9640678\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1f17dab657a7f9d2ac97a47840ee63f0022037a3\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:percent:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\022bf9d49909ec5d48d8250a9dbcd342feaa1023\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\b868be6baa642fd7a743a06ceeafa187e2883aa1\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Android\AVDs\.android\build-cache\938ccec6eb4c8a1ae33d740b5a46ace2dc55de2c\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\79e48c5b73e06a838b779e3711dad9ace586c17b\output\AndroidManifest.xml:26:5-20
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Android\AVDs\.android\build-cache\edf4bcbe895c5a1c32bc841cd03264e8975f1722\output\AndroidManifest.xml:9:5-20
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:7:5-32:19
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/Renan/.android/build-cache/a2f2ac452c6f0188d1ed4fbf054da390a0a96bfe/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/Renan/.android/build-cache/d0892ebb42412ac14e9487d92d4f3203803e3a5e/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/Renan/.android/build-cache/a97619498baa45d4cd43d281ab62331bf11207d6/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/Renan/.android/build-cache/2d507af913ca47ac7436e18c8a5ed545e2f6a48d/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/Renan/.android/build-cache/648950699db0c2d781f598aeb6df4194d1738344/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/Renan/.android/build-cache/984dadfa382c2040f900fe48b97e8e200a2570a1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/Renan/.android/build-cache/eaa707e705a78a47cbfd94e9b4174b3e259bc07f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/Renan/.android/build-cache/c275d4b120065d7d83e51e9c51b2030b780fdf66/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/Renan/.android/build-cache/b6ca7d7ea662fa5c432c0637fa75bc9a4acb1483/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:percent:26.0.0-alpha1] /Users/Renan/.android/build-cache/65a3d6ca19a7b3d8993370786fb313c3022c73a6/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/Renan/.android/build-cache/7f832be31c38eb5a37f695f425a568a7e3aacbde/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Renan/.android/build-cache/5fd7a95868a25f4ec79b4c3a4cd8b020cbc156f4/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/87d78e01becdb1a8855a6b48076e3550592110b8/output/AndroidManifest.xml:26:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Renan/.android/build-cache/712864b4f73ca2886daa37468c6019bec471b84a/output/AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:12:9-35
 	android:roundIcon
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:11:9-54
 	android:allowBackup
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:9:9-43
 	android:theme
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:13:9-40
 activity#rblstudios.com.cadastroproduto.view.MainActivity
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:14:9-22:20
+	android:configChanges
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:16:13-59
 	android:name
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:14:19-52
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:15:13-46
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:20:27-74
 activity#rblstudios.com.cadastroproduto.view.CadastroProduto
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:21:9-58
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:23:9-25:62
+	android:configChanges
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:25:13-59
 	android:name
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:21:19-55
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:24:13-49
 activity#rblstudios.com.cadastroproduto.view.RevisaoDados
-ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:22:9-54
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:26:9-28:62
+	android:configChanges
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:28:13-59
 	android:name
-		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:22:19-52
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:27:13-46
+activity#rblstudios.com.cadastroproduto.view.Configuracao
+ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:29:9-31:61
+	android:configChanges
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:31:13-59
+	android:name
+		ADDED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml:30:13-46
 uses-sdk
-INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1c2de999de22ceff5dc05652bc9482104c2ae432\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\710301c8f5a45c8d9769051bec3c84d4b44d5026\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\13d0df1fe75eea22d034b4659cc32e4258f3d87a\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\81e0f88bc6b990fc8a535d976efabcc0be84ba0a\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\241b2662cc377e1d5c1e52c9977197a106476b32\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\510d57fb3fd332168b0dee7a093000aee113dd85\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\7ffd37816b6a9780e2044cb88b3e9b24b7d47774\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\531591f432e4b22d117d59630fc67fd5b9c186d7\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\b68c692f79e1624b03abdd8515079578d23e258c\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\079086f5a7d525a03022d0f0aa38ade0e9640678\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1f17dab657a7f9d2ac97a47840ee63f0022037a3\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:percent:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\022bf9d49909ec5d48d8250a9dbcd342feaa1023\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\b868be6baa642fd7a743a06ceeafa187e2883aa1\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Android\AVDs\.android\build-cache\938ccec6eb4c8a1ae33d740b5a46ace2dc55de2c\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\79e48c5b73e06a838b779e3711dad9ace586c17b\output\AndroidManifest.xml:20:5-44
-MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Android\AVDs\.android\build-cache\edf4bcbe895c5a1c32bc841cd03264e8975f1722\output\AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/Renan/.android/build-cache/a2f2ac452c6f0188d1ed4fbf054da390a0a96bfe/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/Renan/.android/build-cache/d0892ebb42412ac14e9487d92d4f3203803e3a5e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/Renan/.android/build-cache/a97619498baa45d4cd43d281ab62331bf11207d6/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/7f1513c85d0467a26f10e1ec4f2cdb5f099c38d8/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/Renan/.android/build-cache/2d507af913ca47ac7436e18c8a5ed545e2f6a48d/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/Renan/.android/build-cache/648950699db0c2d781f598aeb6df4194d1738344/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/Renan/.android/build-cache/984dadfa382c2040f900fe48b97e8e200a2570a1/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/Renan/.android/build-cache/eaa707e705a78a47cbfd94e9b4174b3e259bc07f/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/Renan/.android/build-cache/c275d4b120065d7d83e51e9c51b2030b780fdf66/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/Renan/.android/build-cache/b6ca7d7ea662fa5c432c0637fa75bc9a4acb1483/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:percent:26.0.0-alpha1] /Users/Renan/.android/build-cache/65a3d6ca19a7b3d8993370786fb313c3022c73a6/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/Renan/.android/build-cache/7f832be31c38eb5a37f695f425a568a7e3aacbde/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/Renan/.android/build-cache/5fd7a95868a25f4ec79b4c3a4cd8b020cbc156f4/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/87d78e01becdb1a8855a6b48076e3550592110b8/output/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/Renan/.android/build-cache/712864b4f73ca2886daa37468c6019bec471b84a/output/AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1c2de999de22ceff5dc05652bc9482104c2ae432\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/Renan/.android/build-cache/a2f2ac452c6f0188d1ed4fbf054da390a0a96bfe/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1c2de999de22ceff5dc05652bc9482104c2ae432\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\710301c8f5a45c8d9769051bec3c84d4b44d5026\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\13d0df1fe75eea22d034b4659cc32e4258f3d87a\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\81e0f88bc6b990fc8a535d976efabcc0be84ba0a\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\241b2662cc377e1d5c1e52c9977197a106476b32\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\510d57fb3fd332168b0dee7a093000aee113dd85\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\7ffd37816b6a9780e2044cb88b3e9b24b7d47774\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\531591f432e4b22d117d59630fc67fd5b9c186d7\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\b68c692f79e1624b03abdd8515079578d23e258c\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\079086f5a7d525a03022d0f0aa38ade0e9640678\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1f17dab657a7f9d2ac97a47840ee63f0022037a3\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:percent:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\022bf9d49909ec5d48d8250a9dbcd342feaa1023\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\b868be6baa642fd7a743a06ceeafa187e2883aa1\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\79e48c5b73e06a838b779e3711dad9ace586c17b\output\AndroidManifest.xml:22:5-24:41
+ADDED from [com.android.support:design:26.0.0-alpha1] /Users/Renan/.android/build-cache/a2f2ac452c6f0188d1ed4fbf054da390a0a96bfe/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/Renan/.android/build-cache/d0892ebb42412ac14e9487d92d4f3203803e3a5e/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/Renan/.android/build-cache/a97619498baa45d4cd43d281ab62331bf11207d6/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/7f1513c85d0467a26f10e1ec4f2cdb5f099c38d8/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/Renan/.android/build-cache/2d507af913ca47ac7436e18c8a5ed545e2f6a48d/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/Renan/.android/build-cache/648950699db0c2d781f598aeb6df4194d1738344/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/Renan/.android/build-cache/984dadfa382c2040f900fe48b97e8e200a2570a1/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/Renan/.android/build-cache/eaa707e705a78a47cbfd94e9b4174b3e259bc07f/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/Renan/.android/build-cache/c275d4b120065d7d83e51e9c51b2030b780fdf66/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/Renan/.android/build-cache/b6ca7d7ea662fa5c432c0637fa75bc9a4acb1483/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:percent:26.0.0-alpha1] /Users/Renan/.android/build-cache/65a3d6ca19a7b3d8993370786fb313c3022c73a6/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/Renan/.android/build-cache/7f832be31c38eb5a37f695f425a568a7e3aacbde/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/Renan/.android/build-cache/87d78e01becdb1a8855a6b48076e3550592110b8/output/AndroidManifest.xml:22:5-24:41
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1c2de999de22ceff5dc05652bc9482104c2ae432\output\AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/Renan/.android/build-cache/a2f2ac452c6f0188d1ed4fbf054da390a0a96bfe/output/AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Android\AVDs\.android\build-cache\1c2de999de22ceff5dc05652bc9482104c2ae432\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/Renan/.android/build-cache/a2f2ac452c6f0188d1ed4fbf054da390a0a96bfe/output/AndroidManifest.xml:26:9-47

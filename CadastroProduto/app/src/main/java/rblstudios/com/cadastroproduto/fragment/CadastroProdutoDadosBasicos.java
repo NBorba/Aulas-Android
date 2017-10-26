@@ -4,18 +4,23 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
+import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
 
 /**
@@ -29,7 +34,10 @@ public class CadastroProdutoDadosBasicos extends Fragment {
     private Button btnCadastrarMarca;
     private FloatingActionButton btnProximo;
     private Spinner spinnerMarcaProduto;
-    private TextView txtMarcaSelecionada;
+    private TextView txtMarcaSelecionada, txtPrecoCompra, txtPrecoVenda;
+    private EditText etPrecoCompra, etPrecoVenda;
+
+    private String moeda;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,10 +51,14 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         //Acha componentes da tela por ID
         encontrarViewsPorId(rootView);
 
+        defineMoeda();
+        defineTextosCamposPreco();
+
         // Popula spinner com base na string em Resources
         popularSpinners(rootView);
 
         definirListenerSpinner();
+        definirListenerCampos();
         definirListenerBotoes();
 
         return rootView;
@@ -69,6 +81,21 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         btnProximo = (FloatingActionButton) rootView.findViewById(R.id.CadastroProdutoDadosBasico_btnProximo);
         spinnerMarcaProduto = (Spinner) rootView.findViewById(R.id.CadastroProdutoDadosBasico_spinnerMarcaProduto);
         txtMarcaSelecionada = (TextView) rootView.findViewById(R.id.CadastroProdutoDadosBasico_txtMarcaSelecionada);
+        txtPrecoCompra = (TextView) rootView.findViewById(R.id.CadastroProdutoDadosBasico_txtPrecoCompraProduto);
+        txtPrecoVenda = (TextView) rootView.findViewById(R.id.CadastroProdutoDadosBasico_txtPrecoVendaProduto);
+        etPrecoCompra = (EditText) rootView.findViewById(R.id.CadastroProdutoDadosBasico_etPrecoCompraProduto);
+        etPrecoVenda = (EditText) rootView.findViewById(R.id.CadastroProdutoDadosBasico_etPrecoVendaProduto);
+    }
+
+    private void defineMoeda() {
+        moeda = Util.retornaMoeda(PreferenciasCompartilhadasUtil.getSharedPreferenceString(getContext(), getString(R.string.preferencia_moeda), "BRL"));
+    }
+
+    private void defineTextosCamposPreco() {
+        txtPrecoCompra.setText(getString(R.string.CadastroProdutoDadosBasicos_title_PrecoCompra, moeda));
+        txtPrecoVenda.setText(getString(R.string.CadastroProdutoDadosBasicos_title_PrecoVenda, moeda));
+        etPrecoCompra.setHint(getString(R.string.CadastroProdutoDadosBasicos_hint_PrecoCompra, moeda));
+        etPrecoVenda.setHint(getString(R.string.CadastroProdutoDadosBasicos_hint_PrecoVenda, moeda));
     }
 
     private void popularSpinners(View rootView) {
@@ -95,6 +122,21 @@ public class CadastroProdutoDadosBasicos extends Fragment {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
                 txtMarcaSelecionada.setText(getString(R.string.CadastroProdutoDadosBasico_title_MarcaSelecionada));
+            }
+        });
+    }
+    
+    private void definirListenerCampos() {
+        etPrecoVenda.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int idAcao, KeyEvent keyEvent) {
+                if (idAcao == EditorInfo.IME_ACTION_DONE) {
+                    ViewUtil.esconderTeclado(getActivity());
+                    callback.posicaoDeTela(1); // Vai para o fragmento 1
+
+                    return true;
+                }
+                return false;
             }
         });
     }

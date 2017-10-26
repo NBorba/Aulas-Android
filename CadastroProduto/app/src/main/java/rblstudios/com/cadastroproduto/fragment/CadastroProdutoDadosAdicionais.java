@@ -20,9 +20,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Switch;
 
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
 import rblstudios.com.cadastroproduto.view.RevisaoDados;
@@ -42,6 +44,9 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
     // Fragmento de dados de basicos
     private EditText etNomeProduto, etDescricaoProduto, etPrecoCompra, etPrecoVenda;
     private Spinner spinnerMarcaProduto;
+    private Switch switchProdutoAtivo;
+
+    private String moeda;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,6 +59,7 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
 
         //Acha componentes da tela por Id
         encontrarViewsPorId(rootView, container);
+        defineMoeda();
 
         // Define listener dos botões da tela
         defineListenerBotoes();
@@ -79,6 +85,7 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
         imgImagemProduto = (ImageView) rootView.findViewById(R.id.CadastroProdutoDadosAdicionais_ImagemProduto);
         btnTirarFoto = (Button) rootView.findViewById(R.id.CadastroProdutoDadosAdicionais_btnTirarFoto);
         btnCadastrar = (Button) rootView.findViewById(R.id.CadastroClienteVendas_btnCadastrarProduto);
+        switchProdutoAtivo = (Switch) rootView.findViewById(R.id.CadastroProdutoDadosAdicionais_switchProdutoAtivo);
 
         // Fragmento de dados básicos do produto
         etNomeProduto = (EditText) container.findViewById(R.id.CadastroProdutoDadosBasico_etNomeProduto);
@@ -86,6 +93,10 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
         etPrecoCompra = (EditText) container.findViewById(R.id.CadastroProdutoDadosBasico_etPrecoCompraProduto);
         etPrecoVenda = (EditText) container.findViewById(R.id.CadastroProdutoDadosBasico_etPrecoVendaProduto);
         spinnerMarcaProduto = (Spinner) container.findViewById(R.id.CadastroProdutoDadosBasico_spinnerMarcaProduto);
+    }
+
+    private void defineMoeda() {
+        moeda = Util.retornaMoeda(PreferenciasCompartilhadasUtil.getSharedPreferenceString(getContext(), getString(R.string.preferencia_moeda), "BRL"));
     }
 
     private void defineListenerBotoes() {
@@ -107,9 +118,10 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
                     intent.putExtra("nomeProduto", etNomeProduto.getText().toString());
                     intent.putExtra("descricaoProduto", etDescricaoProduto.getText().toString());
                     intent.putExtra("marcaProduto", spinnerMarcaProduto.getSelectedItem().toString());
-                    intent.putExtra("precoCompraProduto", getString(R.string.mensagem_precoreal, etPrecoCompra.getText().toString()));
-                    intent.putExtra("precoVendaProduto", getString(R.string.mensagem_precoreal, etPrecoVenda.getText().toString()));
+                    intent.putExtra("precoCompraProduto", getString(R.string.mensagem_precoreal, moeda, etPrecoCompra.getText().toString()));
+                    intent.putExtra("precoVendaProduto", getString(R.string.mensagem_precoreal, moeda, etPrecoVenda.getText().toString()));
                     intent.putExtra("fotoProduto", Util.converteBitmapParaByteArray(bitmapProduto));
+                    intent.putExtra("produtoAtivo", switchProdutoAtivo.isChecked());
 
                     startActivity(intent);
                 }

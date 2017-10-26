@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

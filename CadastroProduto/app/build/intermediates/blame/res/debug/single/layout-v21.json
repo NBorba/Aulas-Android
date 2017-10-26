@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/res/layout-v21/notification_action.xml"
     },
     {
-        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v21\\notification_action.xml"
+        "merged": "/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/res/layout-v21/notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/res/layout-v21/notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/res/layout-v21/notification_template_custom_big.xml"
     }
 ]

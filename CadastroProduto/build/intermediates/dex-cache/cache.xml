@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="e8837d123384d6057ef3352a70daa3509c47a9f0">
-        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6c6f2b7999147d8e7aa827f2dcea919c89f5458f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_68a21e00dd03a68f752bfe4fda9b45b169ae59e3\classes.dex" />
+        <dex dex="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ee718d529916a4cf7ddc093eef6698222bf62c91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="89f3987e5ea8138d23abcd5cb8b710d54051ff0d">
+        <dex dex="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_82e641a14efef3e2c14e4ae8c92d7f80ee941e8a/classes.dex" />
     </item>
 
 </items>

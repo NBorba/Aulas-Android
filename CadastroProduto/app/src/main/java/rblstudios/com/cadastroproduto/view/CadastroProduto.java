@@ -1,5 +1,7 @@
 package rblstudios.com.cadastroproduto.view;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -14,11 +16,16 @@ import rblstudios.com.cadastroproduto.CadastroPagerAdapter;
 import rblstudios.com.cadastroproduto.fragment.CadastroProdutoDadosBasicos;
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.util.LocaleHelper;
+import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
 
 public class CadastroProduto extends AppCompatActivity implements FragmentoCallback {
+
     private ViewPager mViewPager;
     private TabLayout tabLayout;
+    private String linguagem;
+    private String moeda;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,26 @@ public class CadastroProduto extends AppCompatActivity implements FragmentoCallb
 
         // Define o tab layout com o view pager acima
         tabLayout.setupWithViewPager(mViewPager);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Se a linguagem mudou recriamos a tela
+        if (!linguagem.equals(PreferenciasCompartilhadasUtil.getSharedPreferenceString(this, getString(R.string.preferencia_linguagem), "pt"))
+                || !moeda.equals(PreferenciasCompartilhadasUtil.getSharedPreferenceString(this,getString(R.string.preferencia_moeda), "BRL"))) {
+            recreate();
+        }
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        SharedPreferences sharedPref = base.getSharedPreferences(base.getString(R.string.arquivo_preferencias), Context.MODE_PRIVATE);
+        linguagem = sharedPref.getString(base.getString(R.string.preferencia_linguagem), "pt");
+        moeda = sharedPref.getString(base.getString(R.string.preferencia_moeda), "brl");
+
+        super.attachBaseContext(LocaleHelper.onAttach(base, linguagem));
     }
 
     private void achaViewsPorID() {

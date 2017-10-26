@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    tools:context="rblstudios.com.cadastroproduto.view.Configuracao">
+
+    <TextView
+        android:id="@+id/Configuracao_txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/Configuracao_title"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/Configuracao_txtSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Configuracao_txtTitulo"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/Configuracao_title_subtitulo"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/Configuracao_divisoriaUm"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/Configuracao_txtSubtitulo"
+        android:layout_marginTop="5dp"
+        android:background="#90909090"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Configuracao_title_escolhasualingua"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioGroup
+                android:id="@+id/Configuracao_RadioButtonGroupLinguagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="35dp"
+                android:paddingEnd="35dp">
+
+                <RadioButton
+                    android:id="@+id/Configuracao_RadioButtonPortugues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Configuracao_title_portugues" />
+
+                <RadioButton
+                    android:id="@+id/Configuracao_RadioButtonIngles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Configuracao_title_ingles" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/Configuracao_divisoriaDois"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="#90909090"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Configuracao_title_moeda"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/Configuracao_spinnerMoeda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Configuracao_btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/btntransparentecomborda"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="@string/botaoVoltar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

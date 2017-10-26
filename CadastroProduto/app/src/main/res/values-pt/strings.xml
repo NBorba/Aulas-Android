@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Cadastro de Produtos</string>
+
+    <!-- SharedPreferences -->
+
+    <!-- Botões -->
+    <string name="botaoCadastrar">Cadastrar</string>
+    <string name="botaoContinuar">Continuar</string>
+    <string name="botaoMais">+</string>
+    <string name="botaoOK">OK</string>
+    <string name="botaoTirarFoto">Tirar foto</string>
+    <string name="botaoVoltar">Voltar</string>
+
+    <!-- Títulos -->
+    <string name="title_erro">Erro</string>
+    <string name="title_sucesso">Sucesso</string>
+    <string name="title_indefinido">Indefinido</string>
+
+    <!-- Erros -->
+    <string name="erro_semmarca">Você deve selecionar uma marca antes de continuar</string>
+    <string name="erro_semfoto">Tire uma foto do produto antes de continuar</string>
+    <string name="erro_campovazio">Este campo não pode ficar vazio</string>
+    <string name="erro_valorzerado">Você não pode deixar o valor do campo menor ou igual a 0</string>
+    <string name="erro_semimplementacao">Ainda não implementado</string>
+    <string name="erro_implementacaoclasse">Erro ao implementar classe %1$s</string>
+
+    <!-- Mensagens -->
+    <string name="mensagem_produtocadastradosucesso">Produto cadastrado com sucesso!</string>
+    <string name="mensagem_precoreal">%1$s%2$s</string>
+
+    <!-- MainActivity -->
+    <string name="MainActivity_btnCadastrarProduto">Cadastrar um novo produto</string>
+    <string name="title_fragmentdadosbasicos">Dados básicos do produto</string>
+    <string name="title_fragmentdadosadicionais">Dados adicionais do produto</string>
+
+    <!-- Configuracao -->
+    <string name="Configuracao_title_escolhasualingua">Escolha sua lingua</string>
+    <string name="Configuracao_title_portugues">Português</string>
+    <string name="Configuracao_title_ingles">Inglês</string>
+
+    <!-- CadastroProdutoDadosBasicos -->
+    <string name="CadastroProdutoDadosBasicos_title_nomeproduto">Nome do produto</string>
+    <string name="CadastroProdutoDadosBasicos_hint_nomeproduto">Ex: Pendrive 8GB</string>
+    <string name="CadastroProdutoDadosBasicos_title_descricaoproduto">Descrição do produto</string>
+    <string name="CadastroProdutoDadosBasicos_hint_descricaoproduto">Ex: Armazenamento de dados</string>
+    <string name="CadastroProdutoDadosBasicos_title_marcaproduto">Marca do produto</string>
+    <string-array name="CadastroProdutoDadosBasicos_array_marcas">
+        <item>Selecione uma marca</item>
+        <item>Apple</item>
+        <item>Kingston</item>
+        <item>Microsoft</item>
+        <item>Sony</item>
+    </string-array>
+    <string name="CadastroProdutoDadosBasico_title_MarcaSelecionada">Nenhuma marca selecionada</string>
+    <string name="CadastroProdutoDadosBasico_title_MarcaSelecao">Marca selecionada: %1$s</string>
+    <string name="CadastroProdutoDadosBasicos_title_PrecoCompra">Preço de compra (%1$s)</string>
+    <string name="CadastroProdutoDadosBasicos_hint_PrecoCompra">Ex: %1$s2.00</string>
+    <string name="CadastroProdutoDadosBasicos_title_PrecoVenda">Preço de venda (%1$s)</string>
+    <string name="CadastroProdutoDadosBasicos_hint_PrecoVenda">Ex: %1$s4.00</string>
+
+    <!-- CadastroProdutoDadosAdicionais -->
+    <string name="CadastroProdutoDadosAdicionais_title_FotoProduto">Foto do produto</string>
+    <string name="CadastroProdutoDadosAdicionais_contentdescription_FotoProduto">Tire uma foto do produto</string>
+    <string name="CadastroProdutoDadosAdicionais_title_ProdutoAtivo">Produto disponível para venda?</string>
+
+    <!-- RevisaoDados -->
+    <string name="RevisaoDados_title_titulo">Revise os dados</string>
+    <string name="RevisaoDados_title_subtitulo">Confirme os dados do produto para finalizar o cadastro, ou aperte em \'Voltar\' para realizar uma alteração.</string>
+    <string name="RevisaoDados_title_nome">Nome do produto:</string>
+    <string name="RevisaoDados_placeholder_nome">Nenhum produto encontrado</string>
+    <string name="RevisaoDados_title_descricao">Descricao do produto:</string>
+    <string name="RevisaoDados_placeholder_descricao">Nenhuma descrição encontrada</string>
+    <string name="RevisaoDados_title_marca">Marca do produto:</string>
+    <string name="RevisaoDados_placeholder_marca">Nenhuma marca selecionada</string>
+    <string name="RevisaoDados_title_precoCompra">Preço compra: </string>
+    <string name="RevisaoDados_placeholder_preco">R$0</string>
+    <string name="RevisaoDados_title_precoVenda">Preço venda:</string>
+    <string name="RevisaoDados_title_produtoAtivo">Produto será cadastrado como disponível para venda</string>
+    <string name="RevisaoDados_title_produtoInativo">Produto será cadastrado como indisponível para venda</string>
+    <string name="botaoCompartilhar">Compartilhar</string>
+    <string name="RevisaoDados_title_compartilhamentoprodutoativo">O produto %1$s já está disponível na minha loja! Acesse em %2$s</string>
+    <string name="RevisaoDados_title_compartilhamentoprodutoinativo">Acabei de cadastrar o produto %1$s!</string>
+    <string name="title_compartilharvia">Compartilhar via</string>
+    <string name="Configuracao_title">Configurações</string>
+    <string name="Configuracao_title_subtitulo">Realize mudanças de configuração aqui</string>
+    <string name="Configuracao_title_moeda">Moeda</string>
+</resources>

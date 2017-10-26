@@ -51,9 +51,12 @@
         <Button
             android:id="@+id/CadastroProdutoDadosAdicionais_btnTirarFoto"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_below="@id/CadastroProdutoDadosAdicionais_ImagemProduto"
             android:layout_marginTop="10dp"
+            android:background="@drawable/btntransparentecomborda"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="@string/botaoTirarFoto" />
 
         <Switch
@@ -78,8 +81,9 @@
         <Button
             android:id="@+id/CadastroClienteVendas_btnCadastrarProduto"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_alignParentBottom="true"
+            android:background="@drawable/btntransparentecomborda"
             android:text="@string/botaoContinuar" />
     </RelativeLayout>
 </LinearLayout>

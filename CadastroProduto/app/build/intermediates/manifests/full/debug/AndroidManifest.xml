@@ -21,15 +21,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="rblstudios.com.cadastroproduto.view.MainActivity" >
+        <activity
+            android:name="rblstudios.com.cadastroproduto.view.MainActivity"
+            android:configChanges="layoutDirection|locale" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="rblstudios.com.cadastroproduto.view.CadastroProduto" />
-        <activity android:name="rblstudios.com.cadastroproduto.view.RevisaoDados" />
+        <activity
+            android:name="rblstudios.com.cadastroproduto.view.CadastroProduto"
+            android:configChanges="layoutDirection|locale" />
+        <activity
+            android:name="rblstudios.com.cadastroproduto.view.RevisaoDados"
+            android:configChanges="layoutDirection|locale" />
+        <activity
+            android:name="rblstudios.com.cadastroproduto.view.Configuracao"
+            android:configChanges="layoutDirection|locale" />
     </application>
 
 </manifest>

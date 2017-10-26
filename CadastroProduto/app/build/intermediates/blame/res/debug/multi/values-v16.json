@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+        "outputFile": "/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 116
                 },
                 "from": {
-                    "file": "C:\\Android\\AVDs\\.android\\build-cache\\710301c8f5a45c8d9769051bec3c84d4b44d5026\\output\\res\\values-v16\\values-v16.xml",
+                    "file": "/Users/Renan/.android/build-cache/7462f2c2bbbe709f16aff8a50f72fde943bfc219/output/res/values-v16/values-v16.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

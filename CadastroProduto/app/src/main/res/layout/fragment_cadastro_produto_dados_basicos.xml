@@ -45,7 +45,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/CadastroProdutoDadosBasico_txtNomeProduto"
             android:hint="@string/CadastroProdutoDadosBasicos_hint_nomeproduto"
-            android:inputType="textCapCharacters" />
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/CadastroProdutoDadosBasico_etDescricaoProduto" />
 
         <TextView
             android:id="@+id/CadastroProdutoDadosBasico_txtDescricaoProduto"
@@ -60,8 +63,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/CadastroProdutoDadosBasico_txtDescricaoProduto"
             android:hint="@string/CadastroProdutoDadosBasicos_hint_descricaoproduto"
+            android:imeOptions="actionNext"
             android:inputType="textCapCharacters"
-            android:nextFocusDown="@+id/CadastroClienteCadastrais_etRazaoSocial" />
+            android:maxLines="1"
+            android:nextFocusDown="@+id/CadastroProdutoDadosBasico_spinnerMarcaProduto" />
 
         <TextView
             android:id="@+id/CadastroProdutoDadosBasico_txtMarcaProduto"
@@ -76,15 +81,18 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/CadastroProdutoDadosBasico_txtMarcaProduto"
             android:layout_marginTop="11dp"
-            android:nextFocusDown="@+id/CadastroClienteCadastrais_etTelefone" />
+            android:nextFocusRight="@+id/CadastroProdutoDadosBasico_btnCadastraMarca" />
 
         <Button
             android:id="@+id/CadastroProdutoDadosBasico_btnCadastraMarca"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_below="@id/CadastroProdutoDadosBasico_txtMarcaProduto"
+            android:layout_marginTop="3dp"
             android:layout_toEndOf="@id/CadastroProdutoDadosBasico_spinnerMarcaProduto"
             android:layout_toRightOf="@id/CadastroProdutoDadosBasico_spinnerMarcaProduto"
+            android:background="@drawable/btntransparentecomborda"
+            android:nextFocusDown="@+id/CadastroProdutoDadosBasico_etPrecoCompraProduto"
             android:text="@string/botaoMais" />
 
         <TextView
@@ -95,7 +103,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/CadastroProdutoDadosBasico_title_MarcaSelecionada"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
@@ -109,7 +117,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
             android:hint="@string/CadastroProdutoDadosBasicos_hint_PrecoCompra"
+            android:imeOptions="actionNext"
             android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/CadastroProdutoDadosBasico_etPrecoVendaProduto"
             app:layout_widthPercent="50%" />
 
         <TextView
@@ -128,7 +139,9 @@
             android:layout_toEndOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
             android:layout_toRightOf="@id/CadastroProdutoDadosBasico_txtPrecoCompraProduto"
             android:hint="@string/CadastroProdutoDadosBasicos_hint_PrecoVenda"
+            android:imeOptions="actionDone"
             android:inputType="numberDecimal"
+            android:nextFocusDown="@+id/CadastroProdutoDadosBasico_btnProximo"
             app:layout_widthPercent="50%" />
 
         <android.support.design.widget.FloatingActionButton
