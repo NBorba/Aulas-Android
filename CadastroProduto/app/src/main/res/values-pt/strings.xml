@@ -84,4 +84,5 @@
     <string name="Configuracao_title">Configurações</string>
     <string name="Configuracao_title_subtitulo">Realize mudanças de configuração aqui</string>
     <string name="Configuracao_title_moeda">Moeda</string>
+    <string name="botaoLigar">Ligue para nós!</string>
 </resources>

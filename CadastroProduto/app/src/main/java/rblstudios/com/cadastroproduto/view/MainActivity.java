@@ -3,6 +3,7 @@ package rblstudios.com.cadastroproduto.view;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,7 +16,7 @@ import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnCadastrarProduto;
+    private Button btnCadastrarProduto, btnLigar;
     private ImageButton btnConfiguracao;
     private String linguagem;
 
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private void encontrarViewsPorId() {
         btnCadastrarProduto = (Button) findViewById(R.id.MainActivity_btnCadastrarProduto);
         btnConfiguracao = (ImageButton) findViewById(R.id.MainActivity_btnConfiguracao);
+        btnLigar = (Button) findViewById(R.id.MainActivity_btnLigar);
     }
 
     private void definirListenerBotoes() {
@@ -68,6 +70,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Ao clicar no botão de cadastro de produto, chamamos a activity de configurações
                 Intent intent = new Intent(MainActivity.this, Configuracao.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLigar.setOnClickListener(new View.OnClickListener() {
+            String phone = "";
+            @Override
+            public void onClick(View view) {
+                // Ao clicar no botão de ligação definimos o telefone e chamamos o intent de ligação
+                switch (linguagem) {
+                    case "pt":
+                        phone = "+5541995098015";
+                        break;
+                    case "en":
+                        phone = "+34666777888";
+                        break;
+                }
+
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
                 startActivity(intent);
             }
         });

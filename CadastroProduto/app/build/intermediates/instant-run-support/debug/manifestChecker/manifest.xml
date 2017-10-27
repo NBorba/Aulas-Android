@@ -8,7 +8,11 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="26" />
 
+    <!-- Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Ligação -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <meta-data
         android:name="android.support.VERSION"

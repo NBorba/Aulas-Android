@@ -3,25 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
     tools:context="rblstudios.com.cadastroproduto.view.MainActivity">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/MainActivity_btnCadastrarProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/btntransparentecomborda"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/MainActivity_btnCadastrarProduto" />
+
+        <ImageButton
+            android:id="@+id/MainActivity_btnConfiguracao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btnconfig" />
+
+    </LinearLayout>
+
     <Button
-        android:id="@+id/MainActivity_btnCadastrarProduto"
+        android:id="@+id/MainActivity_btnLigar"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_gravity="center"
         android:background="@drawable/btntransparentecomborda"
-        android:paddingLeft="25dp"
+        android:drawableLeft="@drawable/ic_ligar"
+        android:drawableStart="@drawable/ic_ligar"
+        android:paddingLeft="15dp"
         android:paddingRight="25dp"
-        android:text="@string/MainActivity_btnCadastrarProduto" />
-
-    <ImageButton
-        android:id="@+id/MainActivity_btnConfiguracao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/btnconfig" />
+        android:text="@string/botaoLigar" />
 
 </LinearLayout>

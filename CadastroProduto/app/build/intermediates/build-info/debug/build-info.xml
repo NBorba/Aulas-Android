@@ -6,7 +6,7 @@
     density="xhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1509136995564"
+    timestamp="1509138843269"
     token="3043429398036943540"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -22,6 +22,10 @@
     <task
         name="verifier"
         duration="0" />
+
+    <artifact
+        location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/outputs/apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -66,7 +70,44 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1509136995564"
-        verifier="COLD_SWAP_REQUESTED" />
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1509138554330"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1509138700859"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1509138843269"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>
