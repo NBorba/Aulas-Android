@@ -51,12 +51,16 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         //Acha componentes da tela por ID
         encontrarViewsPorId(rootView);
 
+        // Busca a moeda definida pelo usuário nas configurações
         defineMoeda();
+
+        //Define os textos dos campos utizando a moeda encontrada da configuração
         defineTextosCamposPreco();
 
         // Popula spinner com base na string em Resources
         popularSpinners(rootView);
 
+        // Listeners
         definirListenerSpinner();
         definirListenerCampos();
         definirListenerBotoes();
@@ -125,8 +129,9 @@ public class CadastroProdutoDadosBasicos extends Fragment {
             }
         });
     }
-    
+
     private void definirListenerCampos() {
+        // Se o botão "done" foi apertado, vamos para o próximo fragmento
         etPrecoVenda.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int idAcao, KeyEvent keyEvent) {

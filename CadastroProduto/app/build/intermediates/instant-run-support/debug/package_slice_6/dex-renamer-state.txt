@@ -1,4 +1,4 @@
-#Thu Oct 26 02:07:15 BRST 2017
-base.0=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6
+#Fri Oct 27 11:07:40 BRST 2017
+base.0=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/6
 renamed.0=classes.dex
-file.0=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex
+file.0=/Users/Renan/Desktop/projetos/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/6/classes.dex

@@ -96,6 +96,7 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
     }
 
     private void defineMoeda() {
+        // Busca a moeda definida pelo usuário nas configurações
         moeda = Util.retornaMoeda(PreferenciasCompartilhadasUtil.getSharedPreferenceString(getContext(), getString(R.string.preferencia_moeda), "BRL"));
     }
 

@@ -35,8 +35,14 @@ public class Configuracao extends AppCompatActivity {
         setContentView(R.layout.activity_configuracao);
 
         encontraViewsPorId();
+
+        // Popula spinner com moedas disponíveis
         popularSpinnerMoeda();
+
+        // Busca configurações anteriores e remonta a tela
         remontaConfiguracoesAnteriores();
+
+        // Listeners
         defineListenerRadioGroupLinguagem();
         defineListenerSpinnerMoeda();
         defineListenerBotoes();
@@ -54,6 +60,7 @@ public class Configuracao extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context base) {
+        // Monta a tela com a linguagem definida pelo usuário
         SharedPreferences sharedPref = base.getSharedPreferences(base.getString(R.string.arquivo_preferencias), Context.MODE_PRIVATE);
         linguagem = sharedPref.getString(base.getString(R.string.preferencia_linguagem), "pt");
         super.attachBaseContext(LocaleHelper.onAttach(base, linguagem));
@@ -90,17 +97,20 @@ public class Configuracao extends AppCompatActivity {
     }
 
     private void defineListenerRadioGroupLinguagem() {
+        // Ao marcar um RadioButton, mudamos a linguagem
         rgLinguagem.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, @IdRes int id) {
                 switch (id) {
                     case R.id.Configuracao_RadioButtonPortugues:
+                        // Se a linguagem selecionada é diferente da atual
                         if (!linguagem.equals("pt")) {
                             mudarLingua("pt");
                             recreate();
                         }
                         break;
                     case R.id.Configuracao_RadioButtonIngles:
+                        // Se a linguagem selecionada é diferente da atual
                         if (!linguagem.equals("en")) {
                             mudarLingua("en");
                             recreate();
@@ -112,7 +122,9 @@ public class Configuracao extends AppCompatActivity {
     }
 
     private void mudarLingua(String codigoLinguagem) {
+        // Define linguagem para linguagem que passamos
         LocaleHelper.setLocale(this, codigoLinguagem);
+        // Salva nas preferências do aparelho
         PreferenciasCompartilhadasUtil.setSharedPreferenceString(this, getString(R.string.preferencia_linguagem), codigoLinguagem);
     }
 
@@ -128,7 +140,8 @@ public class Configuracao extends AppCompatActivity {
         spinnerMoeda.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                mudarMoeda(spinnerMoeda.getSelectedItem().toString());
+                // Salva a moeda selecionada pelo usuário
+                salvarMoeda(spinnerMoeda.getSelectedItem().toString());
             }
 
             @Override
@@ -139,7 +152,7 @@ public class Configuracao extends AppCompatActivity {
         });
     }
 
-    private void mudarMoeda(String moeda) {
+    private void salvarMoeda(String moeda) {
         PreferenciasCompartilhadasUtil.setSharedPreferenceString(this, getString(R.string.preferencia_moeda), moeda);
     }
 

@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         encontrarViewsPorId();
+
+        // Listeners
         definirListenerBotoes();
     }
 
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context base) {
+        // Buscamos a linguagem do usuário e criamos a tela com ela
         SharedPreferences sharedPref = base.getSharedPreferences(base.getString(R.string.arquivo_preferencias), Context.MODE_PRIVATE);
         linguagem = sharedPref.getString(base.getString(R.string.preferencia_linguagem), "pt");
         super.attachBaseContext(LocaleHelper.onAttach(base, linguagem));

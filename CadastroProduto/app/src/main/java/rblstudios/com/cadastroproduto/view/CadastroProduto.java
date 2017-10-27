@@ -51,16 +51,17 @@ public class CadastroProduto extends AppCompatActivity implements FragmentoCallb
 
         // Se a linguagem mudou recriamos a tela
         if (!linguagem.equals(PreferenciasCompartilhadasUtil.getSharedPreferenceString(this, getString(R.string.preferencia_linguagem), "pt"))
-                || !moeda.equals(PreferenciasCompartilhadasUtil.getSharedPreferenceString(this,getString(R.string.preferencia_moeda), "BRL"))) {
+                || !moeda.equals(PreferenciasCompartilhadasUtil.getSharedPreferenceString(this, getString(R.string.preferencia_moeda), "BRL"))) {
             recreate();
         }
     }
 
     @Override
     protected void attachBaseContext(Context base) {
+        // Busca preferências
         SharedPreferences sharedPref = base.getSharedPreferences(base.getString(R.string.arquivo_preferencias), Context.MODE_PRIVATE);
         linguagem = sharedPref.getString(base.getString(R.string.preferencia_linguagem), "pt");
-        moeda = sharedPref.getString(base.getString(R.string.preferencia_moeda), "brl");
+        moeda = sharedPref.getString(base.getString(R.string.preferencia_moeda), "BRL");
 
         super.attachBaseContext(LocaleHelper.onAttach(base, linguagem));
     }
