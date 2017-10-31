@@ -92,4 +92,10 @@
     <string name="RevisaoDados_title_produtoInativo">Produto será cadastrado como indisponível para venda</string>
     <string name="RevisaoDados_title_compartilhamentoprodutoativo">O produto %1$s já está disponível na minha loja! Acesse em %2$s</string>
     <string name="RevisaoDados_title_compartilhamentoprodutoinativo">Acabei de cadastrar o produto %1$s!</string>
+
+    <!-- ItemListaProduto -->
+    <string name="ItemListaProduto_title_marcaproduto">Marca do produto</string>
+    <string name="ItemListaProduto_title_nomeproduto">Nome do produto</string>
+    <string name="ItemListaProduto_title_precovenda">R$0</string>
+    <string name="ItemListaProduto_title_statusproduto">Produto disponível/indisponível</string>
 </resources>
