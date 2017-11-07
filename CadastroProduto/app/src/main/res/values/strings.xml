@@ -35,7 +35,8 @@
     <string name="mensagem_precoreal">%1$s%2$s</string>
 
     <!-- MainActivity -->
-    <string name="MainActivity_btnCadastrarProduto">Cadastrar um novo produto</string>
+    <string name="MainActivity_btnCadastrarProduto">Cadastrar produto</string>
+    <string name="MainActivity_btnVerProdutos">Ver produtos</string>
     <string name="title_fragmentdadosbasicos">Dados básicos do produto</string>
     <string name="title_fragmentdadosadicionais">Dados adicionais do produto</string>
 

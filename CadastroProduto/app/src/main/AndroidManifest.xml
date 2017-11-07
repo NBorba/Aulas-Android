@@ -32,7 +32,8 @@
             android:configChanges="layoutDirection|locale" />
         <activity
             android:name=".view.Configuracao"
-            android:configChanges="layoutDirection|locale"/>
+            android:configChanges="layoutDirection|locale" />
+        <activity android:name=".view.AndroidDatabaseManager" />
     </application>
 
 </manifest>

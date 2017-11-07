@@ -29,7 +29,7 @@
     <string name="mensagem_precoreal">%1$s%2$s</string>
 
     <!-- MainActivity -->
-    <string name="MainActivity_btnCadastrarProduto">Cadastrar um novo produto</string>
+    <string name="MainActivity_btnCadastrarProduto">Cadastrar Produto</string>
     <string name="title_fragmentdadosbasicos">Dados básicos do produto</string>
     <string name="title_fragmentdadosadicionais">Dados adicionais do produto</string>
 
@@ -85,4 +85,9 @@
     <string name="Configuracao_title_subtitulo">Realize mudanças de configuração aqui</string>
     <string name="Configuracao_title_moeda">Moeda</string>
     <string name="botaoLigar">Ligue para nós!</string>
+    <string name="MainActivity_btnVerProdutos">Ver produtos</string>
+    <string name="ItemListaProduto_title_statusproduto">Produto disponível/indisponível</string>
+    <string name="ItemListaProduto_title_precovenda">R$0</string>
+    <string name="ItemListaProduto_title_nomeproduto">Nome do produto</string>
+    <string name="ItemListaProduto_title_marcaproduto">Marca do produto</string>
 </resources>

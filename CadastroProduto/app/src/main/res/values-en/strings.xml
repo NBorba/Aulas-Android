@@ -66,4 +66,9 @@
     <string name="Configuracao_title_subtitulo">Make changes on the app\'s configurations here</string>
     <string name="Configuracao_title_moeda">Currency</string>
     <string name="botaoLigar">Call us!</string>
+    <string name="MainActivity_btnVerProdutos">View products</string>
+    <string name="ItemListaProduto_title_statusproduto">Product available/unavailable</string>
+    <string name="ItemListaProduto_title_precovenda">$0</string>
+    <string name="ItemListaProduto_title_nomeproduto">Product name</string>
+    <string name="ItemListaProduto_title_marcaproduto">Product brand</string>
 </resources>

@@ -45,6 +45,7 @@
         <activity
             android:name="rblstudios.com.cadastroproduto.view.Configuracao"
             android:configChanges="layoutDirection|locale" />
+        <activity android:name="rblstudios.com.cadastroproduto.view.AndroidDatabaseManager" />
     </application>
 
 </manifest>

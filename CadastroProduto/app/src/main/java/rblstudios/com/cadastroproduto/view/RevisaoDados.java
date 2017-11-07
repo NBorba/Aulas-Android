@@ -14,9 +14,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.controller.ProdutoController;
+import rblstudios.com.cadastroproduto.model.Produto;
 import rblstudios.com.cadastroproduto.util.LocaleHelper;
 import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 import rblstudios.com.cadastroproduto.util.Util;
+import rblstudios.com.cadastroproduto.util.ViewUtil;
 
 public class RevisaoDados extends AppCompatActivity {
 
@@ -112,24 +115,26 @@ public class RevisaoDados extends AppCompatActivity {
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                cadastrarProduto();
+
                 // Constroi o alerta
                 AlertDialog.Builder construtorAlerta = new AlertDialog.Builder(RevisaoDados.this);
-                    construtorAlerta.setMessage(getString(R.string.mensagem_produtocadastradosucesso));
-                    construtorAlerta.setCancelable(true);
+                construtorAlerta.setMessage(getString(R.string.mensagem_produtocadastradosucesso));
+                construtorAlerta.setCancelable(true);
 
-                    construtorAlerta.setPositiveButton(
-                            getString(R.string.botaoOK),
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    // Volta para a tela de cadastro
-                                    Intent intent = new Intent(RevisaoDados.this, MainActivity.class);
-                                    startActivity(intent);
-                                    RevisaoDados.this.finishAffinity();
-                                }
-                            });
+                construtorAlerta.setPositiveButton(
+                        getString(R.string.botaoOK),
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // Volta para a tela de cadastro
+                                Intent intent = new Intent(RevisaoDados.this, MainActivity.class);
+                                startActivity(intent);
+                                RevisaoDados.this.finishAffinity();
+                            }
+                        });
 
-                    // Botão de compartilhamento
-                    construtorAlerta.setNegativeButton(
+                // Botão de compartilhamento
+                construtorAlerta.setNegativeButton(
                         getString(R.string.botaoCompartilhar),
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
@@ -157,9 +162,25 @@ public class RevisaoDados extends AppCompatActivity {
                             }
                         });
 
-                    AlertDialog alerta = construtorAlerta.create();
-                    alerta.show();
+                AlertDialog alerta = construtorAlerta.create();
+                alerta.show();
             }
         });
+    }
+
+    private void cadastrarProduto() {
+        ProdutoController produtoController = new ProdutoController(this);
+        try {
+            Produto produto = new Produto();
+            produto.setNome(txtNomeProduto.getText().toString());
+            produto.setDescricao(txtDescricaoProduto.getText().toString());
+            produto.setMarca(txtMarcaProduto.getText().toString());
+            produto.setImagem(getIntent().getByteArrayExtra("fotoProduto"));
+
+            produtoController.inserir(produto);
+        } catch (Exception ex) {
+            ViewUtil.criaEMostraAlert(this, getString(R.string.title_erro), ex.getMessage().trim(),
+                    getString(R.string.botaoOK), true);
+        }
     }
 }

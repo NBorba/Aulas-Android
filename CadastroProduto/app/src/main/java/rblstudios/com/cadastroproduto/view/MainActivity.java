@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import rblstudios.com.cadastroproduto.R;
 import rblstudios.com.cadastroproduto.util.LocaleHelper;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnCadastrarProduto, btnLigar;
     private ImageButton btnConfiguracao;
+    private TextView txtBancoDeDados;
     private String linguagem;
 
     @Override
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btnCadastrarProduto = (Button) findViewById(R.id.MainActivity_btnCadastrarProduto);
         btnConfiguracao = (ImageButton) findViewById(R.id.MainActivity_btnConfiguracao);
         btnLigar = (Button) findViewById(R.id.MainActivity_btnLigar);
+        txtBancoDeDados = (TextView) findViewById(R.id.MainActivity_txtBancoDeDados);
     }
 
     private void definirListenerBotoes() {
@@ -89,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
+                startActivity(intent);
+            }
+        });
+
+        txtBancoDeDados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AndroidDatabaseManager.class);
                 startActivity(intent);
             }
         });
