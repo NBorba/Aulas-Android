@@ -17,6 +17,7 @@ import rblstudios.com.cadastroproduto.R;
 import rblstudios.com.cadastroproduto.controller.ProdutoController;
 import rblstudios.com.cadastroproduto.model.Produto;
 import rblstudios.com.cadastroproduto.util.LocaleHelper;
+import rblstudios.com.cadastroproduto.util.NumberUtil;
 import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
@@ -175,8 +176,10 @@ public class RevisaoDados extends AppCompatActivity {
             produto.setNome(txtNomeProduto.getText().toString());
             produto.setDescricao(txtDescricaoProduto.getText().toString());
             produto.setMarca(txtMarcaProduto.getText().toString());
+            produto.setPrecoCompra(NumberUtil.parseParaDouble(txtPrecoCompra.getText().toString()));
+            produto.setPrecoVenda(NumberUtil.parseParaDouble(txtPrecoVenda.getText().toString()));
             produto.setImagem(getIntent().getByteArrayExtra("fotoProduto"));
-
+            produto.setAtivo(getIntent().getBooleanExtra("produtoAtivo", true) ? 1 : 0);
             produtoController.inserir(produto);
         } catch (Exception ex) {
             ViewUtil.criaEMostraAlert(this, getString(R.string.title_erro), ex.getMessage().trim(),

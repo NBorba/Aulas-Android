@@ -36,7 +36,10 @@ public class DbHelper extends SQLiteOpenHelper {
                 + Produto.NOME + " VARCHAR(150), "
                 + Produto.DESCRICAO + " VARCHAR(200), "
                 + Produto.MARCA + " VARCHAR(100), "
-                + Produto.IMAGEM + " BLOB)";
+                + Produto.PRECO_COMPRA + " DOUBLE, "
+                + Produto.PRECO_VENDA + " DOUBLE, "
+                + Produto.IMAGEM + " BLOB, "
+                + Produto.ATIVO + " INT)";
 
         db.execSQL(sql);
     }

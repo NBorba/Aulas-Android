@@ -17,7 +17,7 @@ import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnCadastrarProduto, btnLigar;
+    private Button btnCadastrarProduto, btnVerProdutos, btnLigar;
     private ImageButton btnConfiguracao;
     private TextView txtBancoDeDados;
     private String linguagem;
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void encontrarViewsPorId() {
         btnCadastrarProduto = (Button) findViewById(R.id.MainActivity_btnCadastrarProduto);
+        btnVerProdutos = (Button) findViewById(R.id.MainActivity_btnVerProdutos);
         btnConfiguracao = (ImageButton) findViewById(R.id.MainActivity_btnConfiguracao);
         btnLigar = (Button) findViewById(R.id.MainActivity_btnLigar);
         txtBancoDeDados = (TextView) findViewById(R.id.MainActivity_txtBancoDeDados);
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Ao clicar no botão de cadastro de produto, chamamos a activity de cadastro de produto
                 Intent intent = new Intent(MainActivity.this, CadastroProduto.class);
+                startActivity(intent);
+            }
+        });
+
+        btnVerProdutos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListagemProdutos.class);
                 startActivity(intent);
             }
         });

@@ -48,7 +48,7 @@
         android:text="@string/ItemListaProduto_title_precovenda" />
 
     <TextView
-        android:id="@+id/ItemListaProduto_statusProduto"
+        android:id="@+id/ItemListaProduto_ativoProduto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ItemListaProduto_nomeProduto"

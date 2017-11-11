@@ -34,6 +34,7 @@
             android:name=".view.Configuracao"
             android:configChanges="layoutDirection|locale" />
         <activity android:name=".view.AndroidDatabaseManager" />
+        <activity android:name=".view.ListagemProdutos"></activity>
     </application>
 
 </manifest>

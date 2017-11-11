@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Projetos-Renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\1601129\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-26.0.0-alpha1.aar\\7e3ba18f0befcb37ea56eb9390844b35\\res\\values-v23\\values-v23.xml",

@@ -31,7 +31,10 @@ public class ProdutoDAO implements ICrud<Produto> {
         valores.put(Produto.NOME, produto.getNome());
         valores.put(Produto.DESCRICAO, produto.getDescricao());
         valores.put(Produto.MARCA, produto.getMarca());
+        valores.put(Produto.PRECO_COMPRA, produto.getPrecoCompra());
+        valores.put(Produto.PRECO_VENDA, produto.getPrecoVenda());
         valores.put(Produto.IMAGEM, produto.getImagem());
+        valores.put(Produto.ATIVO, produto.getAtivo());
         long id = db.insert(Produto.TABLE, null, valores);
 
         db.close();
@@ -45,6 +48,10 @@ public class ProdutoDAO implements ICrud<Produto> {
         valores.put(Produto.NOME, produto.getNome());
         valores.put(Produto.DESCRICAO, produto.getDescricao());
         valores.put(Produto.MARCA, produto.getMarca());
+        valores.put(Produto.PRECO_COMPRA, produto.getPrecoCompra());
+        valores.put(Produto.PRECO_VENDA, produto.getPrecoVenda());
+        valores.put(Produto.IMAGEM, produto.getImagem());
+        valores.put(Produto.ATIVO, produto.getAtivo());
         db.update(Produto.TABLE, valores, Produto.ID + " = ?", new String[]{String.valueOf(produto.getId())});
 
         db.close();
@@ -64,7 +71,10 @@ public class ProdutoDAO implements ICrud<Produto> {
                 + Produto.NOME + ", "
                 + Produto.DESCRICAO + ", "
                 + Produto.MARCA + ", "
-                + Produto.IMAGEM
+                + Produto.PRECO_COMPRA + ", "
+                + Produto.PRECO_VENDA + ", "
+                + Produto.IMAGEM + ", "
+                + Produto.ATIVO
                 + " FROM " + Produto.TABLE
                 + " ORDER BY " + Produto.NOME;
 
@@ -80,7 +90,10 @@ public class ProdutoDAO implements ICrud<Produto> {
                 produto.setNome(cursor.getString(cursor.getColumnIndex(Produto.NOME)));
                 produto.setDescricao(cursor.getString(cursor.getColumnIndex(Produto.DESCRICAO)));
                 produto.setMarca(cursor.getString(cursor.getColumnIndex(Produto.MARCA)));
+                produto.setPrecoCompra(cursor.getDouble(cursor.getColumnIndex(Produto.PRECO_COMPRA)));
+                produto.setPrecoVenda(cursor.getDouble(cursor.getColumnIndex(Produto.PRECO_VENDA)));
                 produto.setImagem(cursor.getBlob(cursor.getColumnIndex(Produto.IMAGEM)));
+                produto.setAtivo(cursor.getInt(cursor.getColumnIndex(Produto.ATIVO)));
 
                 listProduto.add(produto);
             } while (cursor.moveToNext());
@@ -100,7 +113,10 @@ public class ProdutoDAO implements ICrud<Produto> {
                 + Produto.NOME + ", "
                 + Produto.DESCRICAO + ", "
                 + Produto.MARCA + ", "
-                + Produto.IMAGEM
+                + Produto.PRECO_COMPRA + ", "
+                + Produto.PRECO_VENDA + ", "
+                + Produto.IMAGEM + ", "
+                + Produto.ATIVO
                 + " FROM " + Produto.TABLE
                 + " WHERE " + Produto.ID + " = ?";
 
@@ -114,7 +130,10 @@ public class ProdutoDAO implements ICrud<Produto> {
                 produto.setNome(cursor.getString(cursor.getColumnIndex(Produto.NOME)));
                 produto.setDescricao(cursor.getString(cursor.getColumnIndex(Produto.DESCRICAO)));
                 produto.setMarca(cursor.getString(cursor.getColumnIndex(Produto.MARCA)));
+                produto.setPrecoCompra(cursor.getDouble(cursor.getColumnIndex(Produto.PRECO_COMPRA)));
+                produto.setPrecoVenda(cursor.getDouble(cursor.getColumnIndex(Produto.PRECO_VENDA)));
                 produto.setImagem(cursor.getBlob(cursor.getColumnIndex(Produto.IMAGEM)));
+                produto.setAtivo(cursor.getInt(cursor.getColumnIndex(Produto.ATIVO)));
 
             } while (cursor.moveToNext());
         }
