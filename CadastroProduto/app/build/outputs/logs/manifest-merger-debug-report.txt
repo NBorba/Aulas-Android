@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\18dbc0d95bceca49cc8dfceb81d5cea2\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:percent:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\percent-26.0.0-alpha1.aar\86d35064c862791b99a0e0a5c593d71b\AndroidManifest.xml:17:1-28:12
@@ -20,33 +20,33 @@ MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\160112
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\1d71d024d53f5610be8ce491c4631c9a\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6a013e13f60c2f2d65df9e27ea602828\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\12659b7d20c32f00584e1ccf1597490a\AndroidManifest.xml:17:1-31:12
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:3:5-45
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:1-40:12
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.CALL_PHONE
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:9:5-69
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:9:5-69
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:9:22-66
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:9:22-66
 application
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:11:5-38:19
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:11:5-38:19
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\18dbc0d95bceca49cc8dfceb81d5cea2\AndroidManifest.xml:29:5-20
@@ -78,63 +78,63 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\1601129
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\12659b7d20c32f00584e1ccf1597490a\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\12659b7d20c32f00584e1ccf1597490a\AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:17:9-40
 activity#rblstudios.com.cadastroproduto.view.MainActivity
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:18:9-26:20
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:configChanges
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:20:13-59
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:20:13-59
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:19:13-46
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:19:13-46
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:24:27-74
 activity#rblstudios.com.cadastroproduto.view.CadastroProduto
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:27:9-29:62
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:27:9-29:62
 	android:configChanges
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:29:13-59
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:29:13-59
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:28:13-49
 activity#rblstudios.com.cadastroproduto.view.RevisaoDados
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:30:9-32:62
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:30:9-32:62
 	android:configChanges
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:32:13-59
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:32:13-59
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:31:13-46
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:31:13-46
 activity#rblstudios.com.cadastroproduto.view.Configuracao
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:33:9-35:62
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:33:9-35:62
 	android:configChanges
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:35:13-59
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:35:13-59
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:34:13-46
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:34:13-46
 activity#rblstudios.com.cadastroproduto.view.AndroidDatabaseManager
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:36:9-65
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:36:9-65
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:36:19-62
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:36:19-62
 activity#rblstudios.com.cadastroproduto.view.ListagemProdutos
-ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:37:9-68
+ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:37:9-68
 	android:name
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:37:19-56
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml:37:19-56
 uses-sdk
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\18dbc0d95bceca49cc8dfceb81d5cea2\AndroidManifest.xml:21:5-23:78
@@ -167,18 +167,18 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\1601129
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6a013e13f60c2f2d65df9e27ea602828\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\12659b7d20c32f00584e1ccf1597490a\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\12659b7d20c32f00584e1ccf1597490a\AndroidManifest.xml:21:5-23:58
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		ADDED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		ADDED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\projetos-renan\Aulas-Android\CadastroProduto\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\AndroidManifest.xml:25:5-27:41
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\18dbc0d95bceca49cc8dfceb81d5cea2\AndroidManifest.xml:25:5-27:41

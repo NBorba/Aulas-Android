@@ -176,8 +176,8 @@ public class RevisaoDados extends AppCompatActivity {
             produto.setNome(txtNomeProduto.getText().toString());
             produto.setDescricao(txtDescricaoProduto.getText().toString());
             produto.setMarca(txtMarcaProduto.getText().toString());
-            produto.setPrecoCompra(NumberUtil.parseParaDouble(txtPrecoCompra.getText().toString()));
-            produto.setPrecoVenda(NumberUtil.parseParaDouble(txtPrecoVenda.getText().toString()));
+            produto.setPrecoCompra(NumberUtil.parseParaDouble(txtPrecoCompra.getText().toString().replace("R$", "")));
+            produto.setPrecoVenda(NumberUtil.parseParaDouble(txtPrecoVenda.getText().toString().replace("R$", "")));
             produto.setImagem(getIntent().getByteArrayExtra("fotoProduto"));
             produto.setAtivo(getIntent().getBooleanExtra("produtoAtivo", true) ? 1 : 0);
             produtoController.inserir(produto);

@@ -63,7 +63,7 @@
     <string name="RevisaoDados_title_compartilhamentoprodutoinativo">I\'ve just finished registering %1$s!</string>
     <string name="title_compartilharvia">Share via</string>
     <string name="Configuracao_title">Settings</string>
-    <string name="Configuracao_title_subtitulo">Make changes on the app\'s configurations here</string>
+    <string name="Configuracao_title_subtitulo">Make changes to the app here</string>
     <string name="Configuracao_title_moeda">Currency</string>
     <string name="botaoLigar">Call us!</string>
     <string name="MainActivity_btnVerProdutos">View products</string>

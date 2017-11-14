@@ -10,8 +10,7 @@ public class NumberUtil {
 
     public static double parseParaDouble(String texto) {
         try {
-            DecimalFormat decimal = new DecimalFormat("0.00");
-            return Double.parseDouble(decimal.format(texto).replace(",", "."));
+            return Double.parseDouble(texto.replace(",", "."));
         } catch (Exception e) {
             return 0;
         }
