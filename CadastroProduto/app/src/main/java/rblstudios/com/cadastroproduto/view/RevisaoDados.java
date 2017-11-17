@@ -1,13 +1,17 @@
 package rblstudios.com.cadastroproduto.view;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -28,6 +32,10 @@ public class RevisaoDados extends AppCompatActivity {
     private ImageView imgProduto;
     private TextView txtNomeProduto, txtDescricaoProduto, txtMarcaProduto, txtPrecoCompra, txtPrecoVenda, txtProdutoAtivo;
     private String linguagem;
+
+    private static final int NOTIFICATION_ID = 1;
+    private NotificationManager notificationManager;
+    private NotificationCompat.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +125,7 @@ public class RevisaoDados extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 cadastrarProduto();
+                exibirNotificacao();
 
                 // Constroi o alerta
                 AlertDialog.Builder construtorAlerta = new AlertDialog.Builder(RevisaoDados.this);
@@ -185,5 +194,32 @@ public class RevisaoDados extends AppCompatActivity {
             ViewUtil.criaEMostraAlert(this, getString(R.string.title_erro), ex.getMessage().trim(),
                     getString(R.string.botaoOK), true);
         }
+    }
+
+
+    private void exibirNotificacao() {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.ic_settings)
+                .setContentTitle(txtNomeProduto.getText().toString())
+                .setContentText(getString(R.string.mensagem_produtocadastradosucesso))
+                .setPriority(2);
+
+        Intent retornoNotificacao = new Intent(this, ListagemProdutos.class);
+
+        TaskStackBuilder taskStackBuilder = TaskStackBuilder.create(this);
+        taskStackBuilder.addParentStack(ListagemProdutos.class);
+
+        taskStackBuilder.addNextIntent(retornoNotificacao);
+        PendingIntent intentPendenteNotificacao = taskStackBuilder.getPendingIntent(0,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+
+        builder.setContentIntent(intentPendenteNotificacao);
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.notify(NOTIFICATION_ID, builder.build());
+    }
+
+    private void downloadNotificacao() {
+        NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
     }
 }
