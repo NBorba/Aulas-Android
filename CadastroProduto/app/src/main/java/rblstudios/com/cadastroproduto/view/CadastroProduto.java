@@ -1,11 +1,13 @@
 package rblstudios.com.cadastroproduto.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -18,6 +20,7 @@ import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
 import rblstudios.com.cadastroproduto.util.LocaleHelper;
 import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
+import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
 
 public class CadastroProduto extends AppCompatActivity implements FragmentoCallback {
@@ -72,7 +75,7 @@ public class CadastroProduto extends AppCompatActivity implements FragmentoCallb
     }
 
     /**
-     * Recebe parametro da interface implementada em CadastroClienteVendas.
+     * Recebe parametro da interface implementada em CadastroProdutoDadosAdicionais.
      * Este parametro é a ID da tela na qual o adaptador de tela deve ir.
      *
      * @param posicao int da posição da tela

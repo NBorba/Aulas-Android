@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
@@ -24,6 +25,7 @@ import android.widget.Switch;
 
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.model.Produto;
 import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
@@ -60,6 +62,9 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
         //Acha componentes da tela por Id
         encontrarViewsPorId(rootView, container);
         defineMoeda();
+
+        // Verifica se algum dado veio via intent para alteração
+        verificaIntentAlteracao();
 
         // Define listener dos botões da tela
         defineListenerBotoes();
@@ -100,6 +105,21 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
         moeda = Util.retornaMoeda(PreferenciasCompartilhadasUtil.getSharedPreferenceString(getContext(), getString(R.string.preferencia_moeda), "BRL"));
     }
 
+    private void verificaIntentAlteracao() {
+        if (getActivity().getIntent().hasExtra("produtoAlteracao")) {
+            Produto produtoAlteracao = getActivity().getIntent().getParcelableExtra("produtoAlteracao");
+
+            if (produtoAlteracao.getImagem() != null) {
+                imgImagemProduto.setImageBitmap(Util.converteByteArrayParaBitmap(produtoAlteracao.getImagem()));
+                bitmapProduto = ((BitmapDrawable) imgImagemProduto.getDrawable()).getBitmap();
+            }
+
+            if (!String.valueOf(produtoAlteracao.getAtivo()).isEmpty()) {
+                switchProdutoAtivo.setChecked(produtoAlteracao.getAtivo() == 1);
+            }
+        }
+    }
+
     private void defineListenerBotoes() {
         // Tira a foto e salva
         btnTirarFoto.setOnClickListener(new View.OnClickListener() {
@@ -116,6 +136,11 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
             public void onClick(View view) {
                 if (validaCampos()) {
                     Intent intent = new Intent(getActivity(), RevisaoDados.class);
+                    if (getActivity().getIntent().hasExtra("produtoAlteracao")) {
+                        intent.putExtra("crud", "alteracao");
+                    } else {
+                        intent.putExtra("crud", "inclusao");
+                    }
                     intent.putExtra("nomeProduto", etNomeProduto.getText().toString());
                     intent.putExtra("descricaoProduto", etDescricaoProduto.getText().toString());
                     intent.putExtra("marcaProduto", spinnerMarcaProduto.getSelectedItem().toString());

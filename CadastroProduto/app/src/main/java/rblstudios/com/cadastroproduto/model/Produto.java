@@ -1,10 +1,14 @@
 package rblstudios.com.cadastroproduto.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.util.Base64;
+
 /**
  * Criado por renan.lucas em 06/11/2017.
  */
 
-public class Produto {
+public class Produto implements Parcelable {
 
     public static final String TABLE = "produto";
 
@@ -91,4 +95,50 @@ public class Produto {
     public void setAtivo(int ativo) {
         this.ativo = ativo;
     }
+
+    public Produto(Parcel in) {
+        String[] data = new String[8];
+
+        in.readStringArray(data);
+        this.id = Integer.parseInt(data[0]);
+        this.nome = data[1];
+        this.descricao = data[2];
+        this.marca = data[3];
+        this.precoCompra = Double.parseDouble(data[4]);
+        this.precoVenda = Double.parseDouble(data[5]);
+        this.imagem = Base64.decode(data[6], Base64.DEFAULT);
+        this.ativo = Integer.parseInt(data[7]);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeStringArray(new String[]{
+                String.valueOf(this.id),
+                this.nome,
+                this.descricao,
+                this.marca,
+                String.valueOf(this.precoCompra),
+                String.valueOf(this.precoVenda),
+                Base64.encodeToString(this.imagem, Base64.DEFAULT),
+                String.valueOf(this.ativo)
+      });
+    }
+
+    public static final Parcelable.Creator<Produto> CREATOR = new Parcelable.Creator<Produto>() {
+
+        @Override
+        public Produto createFromParcel(Parcel source) {
+            return new Produto(source);
+        }
+
+        @Override
+        public Produto[] newArray(int size) {
+            return new Produto[size];
+        }
+    };
 }

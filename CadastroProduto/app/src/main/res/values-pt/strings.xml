@@ -90,4 +90,6 @@
     <string name="ItemListaProduto_title_precovenda">R$0</string>
     <string name="ItemListaProduto_title_nomeproduto">Nome do produto</string>
     <string name="ItemListaProduto_title_marcaproduto">Marca do produto</string>
+    <string name="botaoAlterar">Alterar</string>
+    <string name="RevisaoDados_title_subtitulo_alteracao">Confirme os dados do produto para finalizar a alteração, ou aperte em \'Voltar\' para realizar uma alteração.</string>
 </resources>

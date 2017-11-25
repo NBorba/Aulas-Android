@@ -1,6 +1,7 @@
 package rblstudios.com.cadastroproduto.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -13,15 +14,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
+import rblstudios.com.cadastroproduto.model.Produto;
 import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
+import rblstudios.com.cadastroproduto.view.CadastroProduto;
 
 /**
  * Criado por renan.lucas em 12/10/2017.
@@ -32,10 +37,13 @@ public class CadastroProdutoDadosBasicos extends Fragment {
     private FragmentoCallback callback;
 
     private Button btnCadastrarMarca;
+    private EditText etNomeProduto, etDescricaoProduto, etPrecoCompra, etPrecoVenda;
     private FloatingActionButton btnProximo;
+    private ImageView imgImagemProduto;
     private Spinner spinnerMarcaProduto;
+    private Switch switchProdutoAtivo;
     private TextView txtMarcaSelecionada, txtPrecoCompra, txtPrecoVenda;
-    private EditText etPrecoCompra, etPrecoVenda;
+
 
     private String moeda;
 
@@ -49,7 +57,7 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_cadastro_produto_dados_basicos, container, false);
 
         //Acha componentes da tela por ID
-        encontrarViewsPorId(rootView);
+        encontrarViewsPorId(rootView, container);
 
         // Busca a moeda definida pelo usuário nas configurações
         defineMoeda();
@@ -59,6 +67,9 @@ public class CadastroProdutoDadosBasicos extends Fragment {
 
         // Popula spinner com base na string em Resources
         popularSpinners(rootView);
+
+        // Verifica se algum dado veio via intent para alteração
+        verificaIntentAlteracao();
 
         // Listeners
         definirListenerSpinner();
@@ -80,7 +91,7 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         }
     }
 
-    private void encontrarViewsPorId(View rootView) {
+    private void encontrarViewsPorId(View rootView, View container) {
         btnCadastrarMarca = (Button) rootView.findViewById(R.id.CadastroProdutoDadosBasico_btnCadastraMarca);
         btnProximo = (FloatingActionButton) rootView.findViewById(R.id.CadastroProdutoDadosBasico_btnProximo);
         spinnerMarcaProduto = (Spinner) rootView.findViewById(R.id.CadastroProdutoDadosBasico_spinnerMarcaProduto);
@@ -89,6 +100,12 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         txtPrecoVenda = (TextView) rootView.findViewById(R.id.CadastroProdutoDadosBasico_txtPrecoVendaProduto);
         etPrecoCompra = (EditText) rootView.findViewById(R.id.CadastroProdutoDadosBasico_etPrecoCompraProduto);
         etPrecoVenda = (EditText) rootView.findViewById(R.id.CadastroProdutoDadosBasico_etPrecoVendaProduto);
+        etNomeProduto = (EditText) rootView.findViewById(R.id.CadastroProdutoDadosBasico_etNomeProduto);
+        etDescricaoProduto = (EditText) rootView.findViewById(R.id.CadastroProdutoDadosBasico_etDescricaoProduto);
+
+        // Fragmento de dados adicionais do produto
+        imgImagemProduto = (ImageView) container.findViewById(R.id.CadastroProdutoDadosAdicionais_ImagemProduto);
+        switchProdutoAtivo = (Switch) container.findViewById(R.id.CadastroProdutoDadosAdicionais_switchProdutoAtivo);
     }
 
     private void defineMoeda() {
@@ -100,6 +117,37 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         txtPrecoVenda.setText(getString(R.string.CadastroProdutoDadosBasicos_title_PrecoVenda, moeda));
         etPrecoCompra.setHint(getString(R.string.CadastroProdutoDadosBasicos_hint_PrecoCompra, moeda));
         etPrecoVenda.setHint(getString(R.string.CadastroProdutoDadosBasicos_hint_PrecoVenda, moeda));
+    }
+
+    private void verificaIntentAlteracao() {
+        if (getActivity().getIntent().hasExtra("produtoAlteracao")) {
+            Produto produtoAlteracao = getActivity().getIntent().getParcelableExtra("produtoAlteracao");
+
+            if (produtoAlteracao.getNome() != null && !produtoAlteracao.getNome().isEmpty()) {
+                etNomeProduto.setText(produtoAlteracao.getNome());
+            }
+
+            if (produtoAlteracao.getDescricao() != null && !produtoAlteracao.getDescricao().isEmpty()) {
+                etDescricaoProduto.setText(produtoAlteracao.getDescricao());
+            }
+
+            if (produtoAlteracao.getMarca() != null && !produtoAlteracao.getMarca().isEmpty()) {
+                for (int i = 0; i < spinnerMarcaProduto.getCount(); i++) {
+                    if (spinnerMarcaProduto.getItemAtPosition(i).toString().toLowerCase().equals(produtoAlteracao.getMarca().toLowerCase())) {
+                        spinnerMarcaProduto.setSelection(i);
+                        break;
+                    }
+                }
+            }
+
+            if (!String.valueOf(produtoAlteracao.getPrecoCompra()).isEmpty()) {
+                etPrecoCompra.setText(String.valueOf(produtoAlteracao.getPrecoCompra()));
+            }
+
+            if (!String.valueOf(produtoAlteracao.getPrecoVenda()).isEmpty()) {
+                etPrecoVenda.setText(String.valueOf(produtoAlteracao.getPrecoVenda()));
+            }
+        }
     }
 
     private void popularSpinners(View rootView) {

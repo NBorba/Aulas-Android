@@ -7,6 +7,7 @@
     <string name="preferencia_moeda" translatable="false">moeda</string>
 
     <!-- Botões -->
+    <string name="botaoAlterar">Alterar</string>
     <string name="botaoCadastrar">Cadastrar</string>
     <string name="botaoContinuar">Continuar</string>
     <string name="botaoCompartilhar">Compartilhar</string>
@@ -80,6 +81,7 @@
     <!-- RevisaoDados -->
     <string name="RevisaoDados_title_titulo">Revise os dados</string>
     <string name="RevisaoDados_title_subtitulo">Confirme os dados do produto para finalizar o cadastro, ou aperte em \'Voltar\' para realizar uma alteração.</string>
+    <string name="RevisaoDados_title_subtitulo_alteracao">Confirme os dados do produto para finalizar a alteração, ou aperte em \'Voltar\' para realizar uma alteração.</string>
     <string name="RevisaoDados_title_nome">Nome do produto:</string>
     <string name="RevisaoDados_placeholder_nome">Nenhum produto encontrado</string>
     <string name="RevisaoDados_title_descricao">Descricao do produto:</string>

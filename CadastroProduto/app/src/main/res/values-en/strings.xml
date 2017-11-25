@@ -71,4 +71,6 @@
     <string name="ItemListaProduto_title_precovenda">$0</string>
     <string name="ItemListaProduto_title_nomeproduto">Product name</string>
     <string name="ItemListaProduto_title_marcaproduto">Product brand</string>
+    <string name="botaoAlterar">Modify</string>
+    <string name="RevisaoDados_title_subtitulo_alteracao">Review the product\'s information below and click \'Modify\', or press \'Back\' to make changes.</string>
 </resources>

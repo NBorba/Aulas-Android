@@ -3,78 +3,104 @@
     abi="x86"
     api-level="25"
     build-mode="COLD"
-    density="hdpi"
+    density="xhdpi"
     format="10"
+    ir-eligibility="FIELD_ADDED"
     plugin-version="3.0.0"
-    timestamp="1510955302747"
-    token="4158096348557459739"
+    timestamp="1511569743915"
+    token="-5805285541115203835"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="661" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="147" />
     <task
         name="verifier"
-        duration="0" />
+        duration="134" />
 
     <artifact
-        location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\outputs\apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1510952503847"
+        timestamp="1511568748198"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\outputs\apk\debug\app-debug.apk"
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510955302747"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1511569743915"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Projetos-Renan\Aulas-Android\CadastroProduto\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
