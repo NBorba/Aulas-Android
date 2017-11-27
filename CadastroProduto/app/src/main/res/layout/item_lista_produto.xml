@@ -59,6 +59,19 @@
         android:fontFamily="sans-serif-thin"
         android:text="@string/ItemListaProduto_title_statusproduto" />
 
+    <Button
+        android:id="@+id/ItemListaProduto_btnExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/botaoExcluir"
+        android:textColor="@color/vermelho"/>
+
     <View
         android:id="@+id/ItemListaProduto_divisoriaDois"
         android:layout_width="wrap_content"

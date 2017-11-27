@@ -54,6 +54,7 @@
     <string name="botaoCadastrar">Register</string>
     <string name="botaoCompartilhar">Share</string>
     <string name="botaoContinuar">Continue</string>
+    <string name="botaoExcluir">Delete</string>
     <string name="botaoLigar">Call us!</string>
     <string name="botaoMais">+</string>
     <string name="botaoOK">OK</string>
@@ -66,7 +67,9 @@
     <string name="erro_semmarca">You must select a brand before you continue</string>
     <string name="erro_valorzerado">This field does not allow 0 or below</string>
     <string name="mensagem_precoreal">%1$s%2$s</string>
+    <string name="mensagem_produtoalteradosucesso">Product modified sucessfully!</string>
     <string name="mensagem_produtocadastradosucesso">Product registered successfully</string>
+    <string name="mensagem_produtoexcluidosucesso">Product deleted sucessfully!</string>
     <string name="title_compartilharvia">Share via</string>
     <string name="title_erro">Error</string>
     <string name="title_fragmentdadosadicionais">Adicional information</string>

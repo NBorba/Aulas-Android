@@ -92,4 +92,7 @@
     <string name="ItemListaProduto_title_marcaproduto">Marca do produto</string>
     <string name="botaoAlterar">Alterar</string>
     <string name="RevisaoDados_title_subtitulo_alteracao">Confirme os dados do produto para finalizar a alteração, ou aperte em \'Voltar\' para realizar uma alteração.</string>
+    <string name="mensagem_produtoalteradosucesso">Produto alterado com sucesso!</string>
+    <string name="botaoExcluir">Excluir</string>
+    <string name="mensagem_produtoexcluidosucesso">Produto excluído com sucesso!</string>
 </resources>

@@ -95,7 +95,7 @@ public class RevisaoDados extends AppCompatActivity {
             crud = "inclusao";
         }
 
-        if (!crud.equals("inclusao")) {
+        if (crud.equals("alteracao")) {
             btnCadastrar.setText(getString(R.string.botaoAlterar));
             txtDescricaoActivity.setText(getString(R.string.RevisaoDados_title_subtitulo_alteracao));
         }
@@ -141,76 +141,38 @@ public class RevisaoDados extends AppCompatActivity {
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (crud == "inclusao") {
-                    cadastrarProduto();
-                    exibirNotificacao();
-
-                    // Constroi o alerta
-                    AlertDialog.Builder construtorAlerta = new AlertDialog.Builder(RevisaoDados.this);
-                    construtorAlerta.setMessage(getString(R.string.mensagem_produtocadastradosucesso));
-                    construtorAlerta.setCancelable(true);
-
-                    construtorAlerta.setPositiveButton(
-                            getString(R.string.botaoOK),
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    // Volta para a tela de cadastro
-                                    Intent intent = new Intent(RevisaoDados.this, MainActivity.class);
-                                    startActivity(intent);
-                                    RevisaoDados.this.finishAffinity();
-                                }
-                            });
-
-                    // Botão de compartilhamento
-                    construtorAlerta.setNegativeButton(
-                            getString(R.string.botaoCompartilhar),
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    Intent intentCompartilhamento = new Intent(android.content.Intent.ACTION_SEND);
-                                    intentCompartilhamento.setType("text/plain");
-
-                                    String textoCompartilhamento;
-
-                                    // Se o produto está ativo mostramos mensagem que está disponível no link
-                                    // Se não, mandamos mensagem que acabamos de cadastrar
-                                    if (getIntent().getBooleanExtra("produtoAtivo", true)) {
-                                        textoCompartilhamento = getString(R.string.RevisaoDados_title_compartilhamentoprodutoativo,
-                                                txtNomeProduto.getText(), "www.meusite.com.br/meuproduto");
-                                    } else {
-                                        textoCompartilhamento = getString(R.string.RevisaoDados_title_compartilhamentoprodutoinativo, txtNomeProduto.getText());
-                                    }
-
-                                    String assuntoCompartilhamento = "MeuSite";
-                                    intentCompartilhamento.putExtra(android.content.Intent.EXTRA_SUBJECT, assuntoCompartilhamento);
-                                    intentCompartilhamento.putExtra(android.content.Intent.EXTRA_TEXT, textoCompartilhamento);
-                                    // Compartilhamos o cadastro
-                                    startActivity(Intent.createChooser(intentCompartilhamento, getString(R.string.title_compartilharvia)));
-
-                                    RevisaoDados.this.finishAffinity();
-                                }
-                            });
-
-                    AlertDialog alerta = construtorAlerta.create();
-                    alerta.show();
+                Produto produto = retornaObjetoProduto();
+                if (crud.equals("inclusao")) {
+                    cadastrarProduto(produto);
+                    mostraAlerta(crud);
+                    exibirNotificacao(crud);
                 } else {
-
+                    atualizarProduto(produto);
+                    mostraAlerta(crud);
+                    exibirNotificacao(crud);
                 }
             }
         });
-
     }
 
-    private void cadastrarProduto() {
-        ProdutoController produtoController = new ProdutoController(this);
+    private Produto retornaObjetoProduto() {
+        Produto produto = new Produto();
+        if (getIntent().hasExtra("idProduto")) {
+            produto.setId(getIntent().getIntExtra("idProduto", 0));
+        }
+        produto.setNome(txtNomeProduto.getText().toString());
+        produto.setDescricao(txtDescricaoProduto.getText().toString());
+        produto.setMarca(txtMarcaProduto.getText().toString());
+        produto.setPrecoCompra(NumberUtil.parseParaDouble(txtPrecoCompra.getText().toString().replace("R$", "")));
+        produto.setPrecoVenda(NumberUtil.parseParaDouble(txtPrecoVenda.getText().toString().replace("R$", "")));
+        produto.setImagem(getIntent().getByteArrayExtra("fotoProduto"));
+        produto.setAtivo(getIntent().getBooleanExtra("produtoAtivo", true) ? 1 : 0);
+        return produto;
+    }
+
+    private void cadastrarProduto(Produto produto) {
         try {
-            Produto produto = new Produto();
-            produto.setNome(txtNomeProduto.getText().toString());
-            produto.setDescricao(txtDescricaoProduto.getText().toString());
-            produto.setMarca(txtMarcaProduto.getText().toString());
-            produto.setPrecoCompra(NumberUtil.parseParaDouble(txtPrecoCompra.getText().toString().replace("R$", "")));
-            produto.setPrecoVenda(NumberUtil.parseParaDouble(txtPrecoVenda.getText().toString().replace("R$", "")));
-            produto.setImagem(getIntent().getByteArrayExtra("fotoProduto"));
-            produto.setAtivo(getIntent().getBooleanExtra("produtoAtivo", true) ? 1 : 0);
+            ProdutoController produtoController = new ProdutoController(this);
             produtoController.inserir(produto);
         } catch (Exception ex) {
             ViewUtil.criaEMostraAlert(this, getString(R.string.title_erro), ex.getMessage().trim(),
@@ -218,31 +180,82 @@ public class RevisaoDados extends AppCompatActivity {
         }
     }
 
-    private void atualizarProduto() {
-        ProdutoController produtoController = new ProdutoController(this);
+    private void atualizarProduto(Produto produto) {
         try {
-            Produto produto = new Produto();
-            produto.setNome(txtNomeProduto.getText().toString());
-            produto.setDescricao(txtDescricaoProduto.getText().toString());
-            produto.setMarca(txtMarcaProduto.getText().toString());
-            produto.setPrecoCompra(NumberUtil.parseParaDouble(txtPrecoCompra.getText().toString().replace("R$", "")));
-            produto.setPrecoVenda(NumberUtil.parseParaDouble(txtPrecoVenda.getText().toString().replace("R$", "")));
-            produto.setImagem(getIntent().getByteArrayExtra("fotoProduto"));
-            produto.setAtivo(getIntent().getBooleanExtra("produtoAtivo", true) ? 1 : 0);
-            produtoController.inserir(produto);
+            ProdutoController produtoController = new ProdutoController(this);
+            produtoController.atualizar(produto);
         } catch (Exception ex) {
             ViewUtil.criaEMostraAlert(this, getString(R.string.title_erro), ex.getMessage().trim(),
                     getString(R.string.botaoOK), true);
         }
     }
 
+    private void mostraAlerta(String tipoRegistro) {
+        // Constroi o alerta
+        AlertDialog.Builder construtorAlerta = new AlertDialog.Builder(RevisaoDados.this);
+        if (tipoRegistro.equals("inclusao")) {
+            construtorAlerta.setMessage(getString(R.string.mensagem_produtocadastradosucesso));
+        } else {
+            construtorAlerta.setMessage(getString(R.string.mensagem_produtoalteradosucesso));
+        }
+        construtorAlerta.setCancelable(true);
 
-    private void exibirNotificacao() {
+        construtorAlerta.setPositiveButton(
+                getString(R.string.botaoOK),
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // Volta para a tela de cadastro
+                        Intent intent = new Intent(RevisaoDados.this, MainActivity.class);
+                        startActivity(intent);
+                        RevisaoDados.this.finishAffinity();
+                    }
+                });
+
+        // Botão de compartilhamento
+        construtorAlerta.setNegativeButton(
+                getString(R.string.botaoCompartilhar),
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intentCompartilhamento = new Intent(android.content.Intent.ACTION_SEND);
+                        intentCompartilhamento.setType("text/plain");
+
+                        String textoCompartilhamento;
+
+                        // Se o produto está ativo mostramos mensagem que está disponível no link
+                        // Se não, mandamos mensagem que acabamos de cadastrar
+                        if (getIntent().getBooleanExtra("produtoAtivo", true)) {
+                            textoCompartilhamento = getString(R.string.RevisaoDados_title_compartilhamentoprodutoativo,
+                                    txtNomeProduto.getText(), "www.meusite.com.br/meuproduto");
+                        } else {
+                            textoCompartilhamento = getString(R.string.RevisaoDados_title_compartilhamentoprodutoinativo, txtNomeProduto.getText());
+                        }
+
+                        String assuntoCompartilhamento = "MeuSite";
+                        intentCompartilhamento.putExtra(android.content.Intent.EXTRA_SUBJECT, assuntoCompartilhamento);
+                        intentCompartilhamento.putExtra(android.content.Intent.EXTRA_TEXT, textoCompartilhamento);
+                        // Compartilhamos o cadastro
+                        startActivity(Intent.createChooser(intentCompartilhamento, getString(R.string.title_compartilharvia)));
+
+                        RevisaoDados.this.finishAffinity();
+                    }
+                });
+
+        AlertDialog alerta = construtorAlerta.create();
+        alerta.show();
+    }
+
+    private void exibirNotificacao(String tipoRegistro) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_settings)
                 .setContentTitle(txtNomeProduto.getText().toString())
-                .setContentText(getString(R.string.mensagem_produtocadastradosucesso))
                 .setPriority(2);
+
+                if (tipoRegistro.equals("inclusao")) {
+                    builder.setContentText(getString(R.string.mensagem_produtocadastradosucesso));
+                } else {
+                    builder.setContentText(getString(R.string.mensagem_produtoalteradosucesso));
+                }
+
 
         Intent retornoNotificacao = new Intent(this, ListagemProdutos.class);
 

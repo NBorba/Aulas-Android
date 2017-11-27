@@ -11,6 +11,7 @@
     <string name="botaoCadastrar">Cadastrar</string>
     <string name="botaoContinuar">Continuar</string>
     <string name="botaoCompartilhar">Compartilhar</string>
+    <string name="botaoExcluir">Excluir</string>
     <string name="botaoMais">+</string>
     <string name="botaoOK">OK</string>
     <string name="botaoTirarFoto">Tirar foto</string>
@@ -33,6 +34,8 @@
 
     <!-- Mensagens -->
     <string name="mensagem_produtocadastradosucesso">Produto cadastrado com sucesso!</string>
+    <string name="mensagem_produtoalteradosucesso">Produto alterado com sucesso!</string>
+    <string name="mensagem_produtoexcluidosucesso">Produto excluído com sucesso!</string>
     <string name="mensagem_precoreal">%1$s%2$s</string>
 
     <!-- MainActivity -->

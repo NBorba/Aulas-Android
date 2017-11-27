@@ -47,6 +47,7 @@
     <string name="RevisaoDados_title_produtoAtivo">Produto será cadastrado como disponível para venda</string>
     <string name="RevisaoDados_title_produtoInativo">Produto será cadastrado como indisponível para venda</string>
     <string name="RevisaoDados_title_subtitulo">Confirme os dados do produto para finalizar o cadastro, ou aperte em \'Voltar\' para realizar uma alteração.</string>
+    <string name="RevisaoDados_title_subtitulo_alteracao">Confirme os dados do produto para finalizar a alteração, ou aperte em \'Voltar\' para realizar uma alteração.</string>
     <string name="RevisaoDados_title_titulo">Revise os dados</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -72,6 +73,7 @@
     <string name="botaoCadastrar">Cadastrar</string>
     <string name="botaoCompartilhar">Compartilhar</string>
     <string name="botaoContinuar">Continuar</string>
+    <string name="botaoExcluir">Excluir</string>
     <string name="botaoLigar">Ligue para nós!</string>
     <string name="botaoMais">+</string>
     <string name="botaoOK">OK</string>
@@ -84,7 +86,9 @@
     <string name="erro_semmarca">Você deve selecionar uma marca antes de continuar</string>
     <string name="erro_valorzerado">Você não pode deixar o valor do campo menor ou igual a 0</string>
     <string name="mensagem_precoreal">%1$s%2$s</string>
+    <string name="mensagem_produtoalteradosucesso">Produto alterado com sucesso!</string>
     <string name="mensagem_produtocadastradosucesso">Produto cadastrado com sucesso!</string>
+    <string name="mensagem_produtoexcluidosucesso">Produto excluído com sucesso!</string>
     <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="title_compartilharvia">Compartilhar via</string>

@@ -1,14 +1,16 @@
 package rblstudios.com.cadastroproduto.view;
 
+import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
+import java.util.HashMap;
 import java.util.List;
 
 import rblstudios.com.cadastroproduto.R;
@@ -16,11 +18,14 @@ import rblstudios.com.cadastroproduto.adapter.AdapterProdutosList;
 import rblstudios.com.cadastroproduto.adapter.RecyclerViewClickListener;
 import rblstudios.com.cadastroproduto.controller.ProdutoController;
 import rblstudios.com.cadastroproduto.model.Produto;
-import rblstudios.com.cadastroproduto.util.Util;
+import rblstudios.com.cadastroproduto.util.LocaleHelper;
+import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
+import rblstudios.com.cadastroproduto.util.ViewUtil;
 
 public class ListagemProdutos extends AppCompatActivity {
 
     private RecyclerView recyclerProdutos;
+    private String linguagem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,24 @@ public class ListagemProdutos extends AppCompatActivity {
 
         encontrarViewsPorId();
         criaListProdutos();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Se a linguagem mudou recriamos a tela
+        if (!linguagem.equals(PreferenciasCompartilhadasUtil.getSharedPreferenceString(this, getString(R.string.preferencia_linguagem), "pt"))) {
+            recreate();
+        }
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        // Buscamos a linguagem definida pelo usuário e montamos a tela
+        SharedPreferences sharedPref = base.getSharedPreferences(base.getString(R.string.arquivo_preferencias), Context.MODE_PRIVATE);
+        linguagem = sharedPref.getString(base.getString(R.string.preferencia_linguagem), "pt");
+        super.attachBaseContext(LocaleHelper.onAttach(base, linguagem));
     }
 
     private void encontrarViewsPorId() {
@@ -44,7 +67,7 @@ public class ListagemProdutos extends AppCompatActivity {
         final ProdutoController produtoController = new ProdutoController(this);
         final List<Produto> produtos = produtoController.listarTudo();
 
-        AdapterProdutosList adapterProdutosList = new AdapterProdutosList(produtos, new RecyclerViewClickListener() {
+        final AdapterProdutosList adapterProdutosList = new AdapterProdutosList(produtos, new RecyclerViewClickListener() {
             @Override
             public void onItemClick(View v, int position) {
                 Produto produtoSelecionado = produtos.get(position);
@@ -55,8 +78,24 @@ public class ListagemProdutos extends AppCompatActivity {
                 intent.putExtra("produtoAlteracao", produtoBanco);
                 startActivity(intent);
             }
+        }, new RecyclerViewClickListener() {
+            @Override
+            public void onItemClick(View v, int position) {
+                // EXCLUSÂO
+                Produto produtoSelecionado = produtos.get(position);
+                produtoController.excluir(produtoSelecionado.getId());
+                produtos.remove(position);
+                recyclerProdutos.removeViewAt(position);
+                adapterProdutosList.notifyItemRemoved(position);
+                adapterProdutosList.notifyItemRangeChanged(position, produtos.size());
+
+                ViewUtil.criaEMostraAlert(ListagemProdutos.this, getString(R.string.title_erro),
+                        getString(R.string.mensagem_produtoexcluidosucesso), getString(R.string.botaoOK), false);
+            }
         });
 
         recyclerProdutos.setAdapter(adapterProdutosList);
     }
+
+
 }

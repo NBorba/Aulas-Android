@@ -137,7 +137,9 @@ public class CadastroProdutoDadosAdicionais extends Fragment {
                 if (validaCampos()) {
                     Intent intent = new Intent(getActivity(), RevisaoDados.class);
                     if (getActivity().getIntent().hasExtra("produtoAlteracao")) {
+                        Produto produto = getActivity().getIntent().getParcelableExtra("produtoAlteracao");
                         intent.putExtra("crud", "alteracao");
+                        intent.putExtra("idProduto", produto.getId());
                     } else {
                         intent.putExtra("crud", "inclusao");
                     }

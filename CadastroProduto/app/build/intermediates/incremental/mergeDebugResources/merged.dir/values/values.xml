@@ -754,6 +754,7 @@
     <string name="botaoCadastrar">Cadastrar</string>
     <string name="botaoCompartilhar">Compartilhar</string>
     <string name="botaoContinuar">Continuar</string>
+    <string name="botaoExcluir">Excluir</string>
     <string name="botaoLigar">Ligue para nós!</string>
     <string name="botaoMais">+</string>
     <string name="botaoOK">OK</string>
@@ -768,7 +769,9 @@
     <string name="erro_semmarca">Você deve selecionar uma marca antes de continuar</string>
     <string name="erro_valorzerado">Você não pode deixar o valor do campo menor ou igual a 0</string>
     <string name="mensagem_precoreal">%1$s%2$s</string>
+    <string name="mensagem_produtoalteradosucesso">Produto alterado com sucesso!</string>
     <string name="mensagem_produtocadastradosucesso">Produto cadastrado com sucesso!</string>
+    <string name="mensagem_produtoexcluidosucesso">Produto excluído com sucesso!</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>

@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,14 +22,16 @@ public class AdapterProdutosList extends RecyclerView.Adapter<AdapterProdutosLis
 
     private List<Produto> produtos;
     private RecyclerViewClickListener recyclerViewClickListener;
+    private RecyclerViewClickListener excluirClickListener;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView imgProduto;
-        TextView txtMarcaProduto;
-        TextView txtNomeProduto;
-        TextView txtPrecoVenda;
-        TextView txtAtivo;
+        private ImageView imgProduto;
+        private TextView txtMarcaProduto;
+        private TextView txtNomeProduto;
+        private TextView txtPrecoVenda;
+        private TextView txtAtivo;
+        private Button btnExcluir;
 
         private ViewHolder(View itemView) {
             super(itemView);
@@ -37,12 +40,14 @@ public class AdapterProdutosList extends RecyclerView.Adapter<AdapterProdutosLis
             this.txtNomeProduto = (TextView) itemView.findViewById(R.id.ItemListaProduto_nomeProduto);
             this.txtPrecoVenda = (TextView) itemView.findViewById(R.id.ItemListaProduto_precoVenda);
             this.txtAtivo = (TextView) itemView.findViewById(R.id.ItemListaProduto_ativoProduto);
+            this.btnExcluir = (Button) itemView.findViewById(R.id.ItemListaProduto_btnExcluir);
         }
     }
 
-    public AdapterProdutosList(List<Produto> produtos, RecyclerViewClickListener clickListener) {
+    public AdapterProdutosList(List<Produto> produtos, RecyclerViewClickListener clickListener, RecyclerViewClickListener excluirClickListener) {
         this.produtos = produtos;
         this.recyclerViewClickListener = clickListener;
+        this.excluirClickListener = excluirClickListener;
     }
 
     @Override
@@ -54,6 +59,13 @@ public class AdapterProdutosList extends RecyclerView.Adapter<AdapterProdutosLis
             @Override
             public void onClick(View v) {
                 recyclerViewClickListener.onItemClick(v, viewHolder.getAdapterPosition());
+            }
+        });
+
+        viewHolder.btnExcluir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                excluirClickListener.onItemClick(v, viewHolder.getAdapterPosition());
             }
         });
 

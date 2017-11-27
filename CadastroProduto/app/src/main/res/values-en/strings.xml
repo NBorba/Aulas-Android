@@ -73,4 +73,7 @@
     <string name="ItemListaProduto_title_marcaproduto">Product brand</string>
     <string name="botaoAlterar">Modify</string>
     <string name="RevisaoDados_title_subtitulo_alteracao">Review the product\'s information below and click \'Modify\', or press \'Back\' to make changes.</string>
+    <string name="mensagem_produtoalteradosucesso">Product modified sucessfully!</string>
+    <string name="botaoExcluir">Delete</string>
+    <string name="mensagem_produtoexcluidosucesso">Product deleted sucessfully!</string>
 </resources>
