@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 27 20:03:11 BRST 2017
+#Mon Nov 27 21:31:51 BRST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\anim-v21\\design_bottom_sheet_slide_out.xml

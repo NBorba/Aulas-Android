@@ -3841,12 +3841,14 @@ public final class R {
     public static final int preferencia_moeda=0x7f0d0068;
     public static final int search_menu_title=0x7f0d0069;
     public static final int status_bar_notification_info_overflow=0x7f0d006a;
-    public static final int title_compartilharvia=0x7f0d006b;
-    public static final int title_erro=0x7f0d006c;
-    public static final int title_fragmentdadosadicionais=0x7f0d006d;
-    public static final int title_fragmentdadosbasicos=0x7f0d006e;
-    public static final int title_indefinido=0x7f0d006f;
-    public static final int title_sucesso=0x7f0d0070;
+    public static final int title_ativo=0x7f0d006b;
+    public static final int title_compartilharvia=0x7f0d006c;
+    public static final int title_erro=0x7f0d006d;
+    public static final int title_fragmentdadosadicionais=0x7f0d006e;
+    public static final int title_fragmentdadosbasicos=0x7f0d006f;
+    public static final int title_inativo=0x7f0d0070;
+    public static final int title_indefinido=0x7f0d0071;
+    public static final int title_sucesso=0x7f0d0072;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0e0000;

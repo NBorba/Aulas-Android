@@ -70,11 +70,12 @@
         android:layout_marginRight="16dp"
         android:background="?android:attr/selectableItemBackground"
         android:text="@string/botaoExcluir"
-        android:textColor="@color/vermelho"/>
+        android:textColor="@color/vermelho"
+        android:textSize="12sp" />
 
     <View
         android:id="@+id/ItemListaProduto_divisoriaDois"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/ItemListaProduto_imgProduto"
         android:background="#90909090" />

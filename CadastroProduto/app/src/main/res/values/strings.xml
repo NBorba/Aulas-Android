@@ -22,6 +22,8 @@
     <string name="title_erro">Erro</string>
     <string name="title_sucesso">Sucesso</string>
     <string name="title_indefinido">Indefinido</string>
+    <string name="title_ativo">Ativo</string>
+    <string name="title_inativo">Inativo</string>
     <string name="title_compartilharvia">Compartilhar via</string>
 
     <!-- Erros -->

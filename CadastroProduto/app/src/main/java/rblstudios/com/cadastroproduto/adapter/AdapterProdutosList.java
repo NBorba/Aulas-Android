@@ -1,5 +1,6 @@
 package rblstudios.com.cadastroproduto.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.controller.ProdutoController;
 import rblstudios.com.cadastroproduto.model.Produto;
 import rblstudios.com.cadastroproduto.util.Util;
 
@@ -22,7 +24,7 @@ public class AdapterProdutosList extends RecyclerView.Adapter<AdapterProdutosLis
 
     private List<Produto> produtos;
     private RecyclerViewClickListener recyclerViewClickListener;
-    private RecyclerViewClickListener excluirClickListener;
+    private Context ctx;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -44,10 +46,10 @@ public class AdapterProdutosList extends RecyclerView.Adapter<AdapterProdutosLis
         }
     }
 
-    public AdapterProdutosList(List<Produto> produtos, RecyclerViewClickListener clickListener, RecyclerViewClickListener excluirClickListener) {
+    public AdapterProdutosList(Context ctx, List<Produto> produtos, RecyclerViewClickListener clickListener) {
+        this.ctx = ctx;
         this.produtos = produtos;
         this.recyclerViewClickListener = clickListener;
-        this.excluirClickListener = excluirClickListener;
     }
 
     @Override
@@ -65,7 +67,11 @@ public class AdapterProdutosList extends RecyclerView.Adapter<AdapterProdutosLis
         viewHolder.btnExcluir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                excluirClickListener.onItemClick(v, viewHolder.getAdapterPosition());
+                Produto produtoSelecionado = produtos.get(viewHolder.getAdapterPosition());
+                ProdutoController produtoController = new ProdutoController(ctx);
+                produtoController.excluir(produtoSelecionado.getId());
+                produtos.remove(viewHolder.getAdapterPosition());
+                notifyItemRemoved(viewHolder.getAdapterPosition());
             }
         });
 
@@ -84,7 +90,7 @@ public class AdapterProdutosList extends RecyclerView.Adapter<AdapterProdutosLis
         txtMarcaProduto.setText(produtos.get(position).getMarca());
         txtNomeProduto.setText(produtos.get(position).getNome());
         txtPrecoVenda.setText(String.valueOf(produtos.get(position).getPrecoVenda()));
-        txtAtivo.setText(String.valueOf(produtos.get(position).getAtivo()));
+        txtAtivo.setText(produtos.get(position).getAtivo() == 1 ? ctx.getString(R.string.title_ativo) : ctx.getString(R.string.title_inativo));
     }
 
     @Override

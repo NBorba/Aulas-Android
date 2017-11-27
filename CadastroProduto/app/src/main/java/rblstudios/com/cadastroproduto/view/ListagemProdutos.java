@@ -10,7 +10,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import java.util.HashMap;
 import java.util.List;
 
 import rblstudios.com.cadastroproduto.R;
@@ -67,9 +66,10 @@ public class ListagemProdutos extends AppCompatActivity {
         final ProdutoController produtoController = new ProdutoController(this);
         final List<Produto> produtos = produtoController.listarTudo();
 
-        final AdapterProdutosList adapterProdutosList = new AdapterProdutosList(produtos, new RecyclerViewClickListener() {
+        final AdapterProdutosList adapterProdutosList = new AdapterProdutosList(ListagemProdutos.this, produtos, new RecyclerViewClickListener() {
             @Override
             public void onItemClick(View v, int position) {
+                // ALTERAÇÂO
                 Produto produtoSelecionado = produtos.get(position);
 
                 Produto produtoBanco = produtoController.listarPorId(produtoSelecionado.getId());
@@ -78,24 +78,8 @@ public class ListagemProdutos extends AppCompatActivity {
                 intent.putExtra("produtoAlteracao", produtoBanco);
                 startActivity(intent);
             }
-        }, new RecyclerViewClickListener() {
-            @Override
-            public void onItemClick(View v, int position) {
-                // EXCLUSÂO
-                Produto produtoSelecionado = produtos.get(position);
-                produtoController.excluir(produtoSelecionado.getId());
-                produtos.remove(position);
-                recyclerProdutos.removeViewAt(position);
-                adapterProdutosList.notifyItemRemoved(position);
-                adapterProdutosList.notifyItemRangeChanged(position, produtos.size());
-
-                ViewUtil.criaEMostraAlert(ListagemProdutos.this, getString(R.string.title_erro),
-                        getString(R.string.mensagem_produtoexcluidosucesso), getString(R.string.botaoOK), false);
-            }
         });
 
         recyclerProdutos.setAdapter(adapterProdutosList);
     }
-
-
 }
