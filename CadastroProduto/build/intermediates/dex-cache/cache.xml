@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\c538d918e96a55eac1570efb8dcd41c1\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\de118526aada41c6ad4041ee3d3409be\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\percent-26.0.0-alpha1.aar\86d35064c862791b99a0e0a5c593d71b\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fb5addcf29ec0f677346aa9f740c7d56f457a6d9">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\bb9432c919539cf71be8774a39cccf4a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\1d71d024d53f5610be8ce491c4631c9a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\16c71003a5a82ec27f38e646136d8b61\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\18dbc0d95bceca49cc8dfceb81d5cea2\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6a013e13f60c2f2d65df9e27ea602828\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0abdb518cbc78c2b6c92f3c7140b4922\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\12659b7d20c32f00584e1ccf1597490a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\a536cff3f805ed6e04caaa740371ecf4\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\8a9dcb5a061b67403f19206fe6d4d8ce\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2f8afd0df84143eae6c70dd9f5cf855d\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\7e3ba18f0befcb37ea56eb9390844b35\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\e8c166de5117d23182b0c8ad9ac28355\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\1601129\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\957b4a8cf4bd95766f4f71003abcfc0c\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\projetos-renan\Aulas-Android\CadastroProduto\app\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+
+</items>

@@ -95,4 +95,10 @@
     <string name="mensagem_produtoalteradosucesso">Produto alterado com sucesso!</string>
     <string name="botaoExcluir">Excluir</string>
     <string name="mensagem_produtoexcluidosucesso">Produto excluído com sucesso!</string>
+    <string name="title_inativo">Inativo</string>
+    <string name="title_ativo">Ativo</string>
+    <string-array name="Configuracao_array_moedas">
+        <item>BRL</item>
+        <item>USD</item>
+    </string-array>
 </resources>

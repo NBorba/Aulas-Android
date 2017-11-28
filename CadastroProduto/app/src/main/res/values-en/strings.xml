@@ -76,4 +76,10 @@
     <string name="mensagem_produtoalteradosucesso">Product modified sucessfully!</string>
     <string name="botaoExcluir">Delete</string>
     <string name="mensagem_produtoexcluidosucesso">Product deleted sucessfully!</string>
+    <string name="title_ativo">Active</string>
+    <string name="title_inativo">Inactive</string>
+    <string-array name="Configuracao_array_moedas">
+        <item>BRL</item>
+        <item>USD</item>
+    </string-array>
 </resources>

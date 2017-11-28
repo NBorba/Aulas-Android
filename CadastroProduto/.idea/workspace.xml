@@ -44,35 +44,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdapterProdutosList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdapterProdutosList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/adapter/AdapterProdutosList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="51" column="55" lean-forward="false" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+            <state relative-caret-position="192">
+              <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
               <folding>
                 <element signature="e#2349#2556#0" expanded="true" />
                 <element signature="e#2555#2556#0" expanded="true" />
                 <element signature="e#2609#3104#0" expanded="true" />
                 <element signature="e#3103#3104#0" expanded="true" />
-                <element signature="e#3889#3924#0" expanded="true" />
-                <element signature="e#3927#3964#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListagemProdutos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/ListagemProdutos.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="80" column="9" lean-forward="false" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+            <state relative-caret-position="184">
+              <caret line="111" column="40" lean-forward="false" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1511#1552#0" expanded="true" />
-                <element signature="e#1809#1854#0" expanded="true" />
-                <element signature="e#1920#1966#0" expanded="true" />
-                <element signature="e#2757#3290#0" expanded="true" />
-                <element signature="e#3289#3290#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,6 +86,43 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="58" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Translations Editor" pinned="false" current-in-tab="false">
+        <entry file="android-dummy://C:/projetos-renan/Aulas-Android/CadastroProduto/app/Translations Editor">
+          <provider selected="true" editor-type-id="string-resource-editor">
+            <state />
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -105,6 +135,10 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\projetos-renan\entregaup.jks" />
+    <option name="KEY_ALIAS" value="entregaup2" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -1846,10 +1880,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/btnconfigescuro.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/btnconfig.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/util/LocaleHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" />
         <option value="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en/values-en.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracao.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_cadastro_produto_dados_basicos.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/btntransparentecombordaverde.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/Configuracao.java" />
@@ -1859,11 +1891,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/item_lista_produto.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/interfaces/ICrud.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/controller/ProdutoController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/AndroidDatabaseManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_teste.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/Teste.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/util/FormProdutoUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/dal/ProdutoDAO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/datatabase/DbHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/util/NumberUtil.java" />
@@ -1880,6 +1910,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_lista_produto.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/adapter/AdapterProdutosList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/ListagemProdutos.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/AndroidDatabaseManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" />
       </list>
     </option>
   </component>
@@ -1934,6 +1968,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="values" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CadastroProduto" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strings.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2139,6 +2195,11 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="android.profiler.active" value="true" />
+    <property name="ExportApk.ApkPath" value="C:\projetos-renan\Aulas-Android\CadastroProduto\app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -2234,7 +2295,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511826319356" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511828438565" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2282,7 +2343,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511826319356" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511828438565" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2465,7 +2526,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511826319357" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511828438566" />
       </method>
     </configuration>
     <list size="1">
@@ -2514,19 +2575,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08574739" sideWeight="0.5032841" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47440273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32423207" sideWeight="0.506079" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47440273" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39419794" sideWeight="0.49671593" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32423207" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969605" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32423207" sideWeight="0.49392098" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2537,6 +2597,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2393617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -2569,7 +2630,6 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2393617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -2673,13 +2733,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/util/PreferenciasCompartilhadasUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/util/ViewUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -2720,13 +2773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/AndroidDatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1599">
-          <caret line="834" column="59" lean-forward="false" selection-start-line="834" selection-start-column="59" selection-end-line="834" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_revisao_dados.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -2739,16 +2785,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_teste.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/Teste.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -2883,14 +2919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="android-dummy://C:/Projetos-Renan/Aulas-Android/CadastroProduto/app/Translations Editor" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/datatabase/DbHelper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2984,19 +3012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="android-dummy://C:/projetos-renan/Aulas-Android/CadastroProduto/app/Translations Editor">
-      <provider selected="true" editor-type-id="string-resource-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listagem_produtos.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3037,17 +3052,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_lista_produto.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/AndroidDatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="1206" column="3" lean-forward="false" selection-start-line="1206" selection-start-column="3" selection-end-line="1206" selection-end-column="3" />
           <folding>
-            <element signature="e#3086#3108#0" expanded="true" />
+            <element signature="e#0#63383#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/ListagemProdutos.java">
@@ -3067,16 +3079,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/adapter/AdapterProdutosList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="51" column="55" lean-forward="false" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+        <state relative-caret-position="192">
+          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
           <folding>
             <element signature="e#2349#2556#0" expanded="true" />
             <element signature="e#2555#2556#0" expanded="true" />
             <element signature="e#2609#3104#0" expanded="true" />
             <element signature="e#3103#3104#0" expanded="true" />
-            <element signature="e#3889#3924#0" expanded="true" />
-            <element signature="e#3927#3964#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/rblstudios/com/cadastroproduto/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="111" column="40" lean-forward="false" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_lista_produto.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+          <folding>
+            <element signature="e#3086#3108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="android-dummy://C:/projetos-renan/Aulas-Android/CadastroProduto/app/Translations Editor">
+      <provider selected="true" editor-type-id="string-resource-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="58" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

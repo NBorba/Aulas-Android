@@ -1,4 +1,4 @@
-package rblstudios.com.cadastroproduto.view;
+/*package rblstudios.com.cadastroproduto.view;
 
 //all required import files
 import android.app.Activity;
@@ -1204,4 +1204,4 @@ public class AndroidDatabaseManager extends Activity implements OnItemClickListe
 
     }
 
-}
+}*/

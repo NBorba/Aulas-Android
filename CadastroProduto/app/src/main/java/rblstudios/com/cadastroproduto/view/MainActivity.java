@@ -108,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
         txtBancoDeDados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AndroidDatabaseManager.class);
-                startActivity(intent);
+                //Intent intent = new Intent(MainActivity.this, AndroidDatabaseManager.class);
+                //startActivity(intent);
             }
         });
     }
