@@ -1,4 +1,4 @@
-#Mon Nov 27 22:08:02 BRST 2017
-base.0=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\29
+#Wed Nov 29 19:17:22 BRST 2017
+base.0=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/10
 renamed.0=classes.dex
-file.0=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\29\\classes.dex
+file.0=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/10/classes.dex

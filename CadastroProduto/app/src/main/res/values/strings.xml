@@ -17,6 +17,8 @@
     <string name="botaoTirarFoto">Tirar foto</string>
     <string name="botaoVoltar">Voltar</string>
     <string name="botaoLigar">Ligue para nós!</string>
+    <string name="botaoSim">Sim</string>
+    <string name="botaoNao">Não</string>
 
     <!-- Títulos -->
     <string name="title_erro">Erro</string>
@@ -38,13 +40,21 @@
     <string name="mensagem_produtocadastradosucesso">Produto cadastrado com sucesso!</string>
     <string name="mensagem_produtoalteradosucesso">Produto alterado com sucesso!</string>
     <string name="mensagem_produtoexcluidosucesso">Produto excluído com sucesso!</string>
+    <string name="mensagem_marcacadastradasucesso">Marca cadastrada com sucesso!</string>
+    <string name="mensagem_marcaalteradasucesso">Marca alterada com sucesso!</string>
+    <string name="mensagem_marcaexcluidasucesso">Marca excluída com sucesso!</string>
     <string name="mensagem_precoreal">%1$s%2$s</string>
+    <string name="mensagem_confirmacaoexclusao">Você tem certeza que deseja excluir este registro?</string>
 
     <!-- MainActivity -->
     <string name="MainActivity_btnCadastrarProduto">Cadastrar produto</string>
+    <string name="MainActivity_btnProdutos">Produtos</string>
     <string name="MainActivity_btnVerProdutos">Ver produtos</string>
+    <string name="MainActivity_btnCadastrarMarca">Cadastrar marca</string>
+    <string name="MainActivity_btnMarcas">Marcas</string>
     <string name="title_fragmentdadosbasicos">Dados básicos do produto</string>
     <string name="title_fragmentdadosadicionais">Dados adicionais do produto</string>
+    <string name="title_fragmentdadosbasicosmarca">Dados básicos da marca</string>
 
     <!-- Configuracao -->
     <string name="Configuracao_title">Configurações</string>
@@ -66,10 +76,6 @@
     <string name="CadastroProdutoDadosBasicos_title_marcaproduto">Marca do produto</string>
     <string-array name="CadastroProdutoDadosBasicos_array_marcas">
         <item>Selecione uma marca</item>
-        <item>Apple</item>
-        <item>Kingston</item>
-        <item>Microsoft</item>
-        <item>Sony</item>
     </string-array>
     <string name="CadastroProdutoDadosBasico_title_MarcaSelecionada">Nenhuma marca selecionada</string>
     <string name="CadastroProdutoDadosBasico_title_MarcaSelecao">Marca selecionada: %1$s</string>
@@ -82,6 +88,10 @@
     <string name="CadastroProdutoDadosAdicionais_title_FotoProduto">Foto do produto</string>
     <string name="CadastroProdutoDadosAdicionais_contentdescription_FotoProduto">Tire uma foto do produto</string>
     <string name="CadastroProdutoDadosAdicionais_title_ProdutoAtivo">Produto disponível para venda?</string>
+
+    <!-- CadastroProdutoDadosBasicos -->
+    <string name="CadastroMarcaDadosBasicos_title_nomemarca">Nome da marca</string>
+    <string name="CadastroMarcaDadosBasicos_hint_nomemarca">Ex: Apple</string>
 
     <!-- RevisaoDados -->
     <string name="RevisaoDados_title_titulo">Revise os dados</string>
@@ -106,4 +116,11 @@
     <string name="ItemListaProduto_title_nomeproduto">Nome do produto</string>
     <string name="ItemListaProduto_title_precovenda">R$0</string>
     <string name="ItemListaProduto_title_statusproduto">Produto disponível/indisponível</string>
+
+    <!-- ItemListaProdutoVazio -->
+    <string name="ItemListaProduto_title_nenhumproduto">Nenhum produto cadastrado</string>
+
+    <!-- ItemListaMarcaVazio -->
+    <string name="ItemListaMarca_title_nenhumamarca">Nenhuma marca cadastrada</string>
+    <string name="ItemListaProduto_title_nenhumamarca">Nenhuma marca cadastrada</string>
 </resources>

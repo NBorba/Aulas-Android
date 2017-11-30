@@ -25,12 +25,12 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/MainActivity_btnCadastrarProduto"
+                android:id="@+id/MainActivity_btnProdutos"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="0.8"
                 android:background="@drawable/btntransparentecomborda"
-                android:text="@string/MainActivity_btnCadastrarProduto" />
+                android:text="@string/MainActivity_btnProdutos" />
 
             <ImageButton
                 android:id="@+id/MainActivity_btnConfiguracao"
@@ -53,11 +53,11 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/MainActivity_btnVerProdutos"
+                android:id="@+id/MainActivity_btnMarcas"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/btntransparentecomborda"
-                android:text="@string/MainActivity_btnVerProdutos" />
+                android:text="@string/MainActivity_btnMarcas" />
         </LinearLayout>
 
         <LinearLayout

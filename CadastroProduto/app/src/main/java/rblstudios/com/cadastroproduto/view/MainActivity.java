@@ -17,7 +17,7 @@ import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnCadastrarProduto, btnVerProdutos, btnLigar;
+    private Button btnProdutos, btnMarcas, btnLigar;
     private ImageButton btnConfiguracao;
     private TextView txtBancoDeDados;
     private String linguagem;
@@ -52,27 +52,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void encontrarViewsPorId() {
-        btnCadastrarProduto = (Button) findViewById(R.id.MainActivity_btnCadastrarProduto);
-        btnVerProdutos = (Button) findViewById(R.id.MainActivity_btnVerProdutos);
+        btnProdutos = (Button) findViewById(R.id.MainActivity_btnProdutos);
+        btnMarcas = (Button) findViewById(R.id.MainActivity_btnMarcas);
         btnConfiguracao = (ImageButton) findViewById(R.id.MainActivity_btnConfiguracao);
         btnLigar = (Button) findViewById(R.id.MainActivity_btnLigar);
         txtBancoDeDados = (TextView) findViewById(R.id.MainActivity_txtBancoDeDados);
     }
 
     private void definirListenerBotoes() {
-        btnCadastrarProduto.setOnClickListener(new View.OnClickListener() {
+        btnProdutos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Ao clicar no botão de cadastro de produto, chamamos a activity de cadastro de produto
-                Intent intent = new Intent(MainActivity.this, CadastroProduto.class);
+                Intent intent = new Intent(MainActivity.this, ListagemProdutos.class);
                 startActivity(intent);
             }
         });
 
-        btnVerProdutos.setOnClickListener(new View.OnClickListener() {
+        btnMarcas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ListagemProdutos.class);
+                Intent intent = new Intent(MainActivity.this, ListagemMarcas.class);
                 startActivity(intent);
             }
         });

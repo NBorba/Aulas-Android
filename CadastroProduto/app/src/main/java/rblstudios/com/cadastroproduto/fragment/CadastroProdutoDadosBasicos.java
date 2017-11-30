@@ -20,12 +20,17 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
+
 import rblstudios.com.cadastroproduto.R;
+import rblstudios.com.cadastroproduto.controller.MarcaController;
 import rblstudios.com.cadastroproduto.interfaces.FragmentoCallback;
+import rblstudios.com.cadastroproduto.model.Marca;
 import rblstudios.com.cadastroproduto.model.Produto;
 import rblstudios.com.cadastroproduto.util.PreferenciasCompartilhadasUtil;
 import rblstudios.com.cadastroproduto.util.Util;
 import rblstudios.com.cadastroproduto.util.ViewUtil;
+import rblstudios.com.cadastroproduto.view.CadastroMarca;
 import rblstudios.com.cadastroproduto.view.CadastroProduto;
 
 /**
@@ -151,9 +156,33 @@ public class CadastroProdutoDadosBasicos extends Fragment {
     }
 
     private void popularSpinners(View rootView) {
-        ArrayAdapter<CharSequence> adaptadorMarcas = ArrayAdapter.createFromResource(rootView.getContext(),
-                R.array.CadastroProdutoDadosBasicos_array_marcas, android.R.layout.simple_spinner_item);
-        adaptadorMarcas.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> adaptadorMarcas;
+        MarcaController marcaController = new MarcaController(getContext());
+        List<Marca> listaMarcas =  marcaController.listarTudo();
+
+
+        if (listaMarcas.size() > 0) {
+            String[] marcasArray = new String[listaMarcas.size() + 1];
+
+            for (int i = 0; i < listaMarcas.size() + 1; i++) {
+                if (i == 0) {
+                    marcasArray[i] = "Selecione uma marca";
+                } else {
+                    marcasArray[i] = listaMarcas.get(i-1).getNome();
+                }
+            }
+
+            adaptadorMarcas = new ArrayAdapter<>(rootView.getContext(),
+                    android.R.layout.simple_spinner_item, marcasArray);
+            adaptadorMarcas.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        } else {
+            String[] marcasArray = new String[1];
+            marcasArray[0] = "Nenhuma marca encontrada";
+
+            adaptadorMarcas = new ArrayAdapter<>(rootView.getContext(),
+                    android.R.layout.simple_spinner_item, marcasArray);
+            adaptadorMarcas.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        }
 
         spinnerMarcaProduto.setAdapter(adaptadorMarcas);
     }
@@ -198,7 +227,8 @@ public class CadastroProdutoDadosBasicos extends Fragment {
         btnCadastrarMarca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), getString(R.string.erro_semimplementacao), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getActivity(), CadastroMarca.class);
+                startActivity(intent);
             }
         });
 

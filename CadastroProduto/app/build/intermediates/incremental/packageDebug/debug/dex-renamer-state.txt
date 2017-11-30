@@ -1,4 +1,19 @@
-#Mon Nov 27 22:09:15 BRST 2017
-base.0=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\38
+#Wed Nov 29 23:43:16 BRST 2017
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=C\:\\projetos-renan\\Aulas-Android\\CadastroProduto\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\38\\classes.dex
+base.5=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/17
+base.4=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/14
+base.3=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/12
+base.2=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/16
+base.1=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/13
+base.0=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/15
+file.5=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/17/classes.dex
+file.4=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/14/classes.dex
+file.3=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/12/classes.dex
+file.2=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/16/classes.dex
+file.1=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/13/classes.dex
+file.0=/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/dexMerger/debug/15/classes.dex

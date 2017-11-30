@@ -46,10 +46,6 @@
     <string name="CadastroProdutoDadosBasicos_title_marcaproduto">Marca do produto</string>
     <string-array name="CadastroProdutoDadosBasicos_array_marcas">
         <item>Selecione uma marca</item>
-        <item>Apple</item>
-        <item>Kingston</item>
-        <item>Microsoft</item>
-        <item>Sony</item>
     </string-array>
     <string name="CadastroProdutoDadosBasico_title_MarcaSelecionada">Nenhuma marca selecionada</string>
     <string name="CadastroProdutoDadosBasico_title_MarcaSelecao">Marca selecionada: %1$s</string>
@@ -101,4 +97,19 @@
         <item>BRL</item>
         <item>USD</item>
     </string-array>
+    <string name="ItemListaProduto_title_nenhumproduto">Nenhum produto cadastrado</string>
+    <string name="ItemListaProduto_title_nenhumamarca">Nenhuma marca cadastrada</string>
+    <string name="ItemListaMarca_title_nenhumamarca">Nenhuma marca cadastrada</string>
+    <string name="MainActivity_btnCadastrarMarca">Cadastrar marca</string>
+    <string name="MainActivity_btnMarcas">Marcas</string>
+    <string name="MainActivity_btnProdutos">Produtos</string>
+    <string name="title_fragmentdadosbasicosmarca">Dados básicos da marca</string>
+    <string name="CadastroMarcaDadosBasicos_hint_nomemarca">Ex: Apple</string>
+    <string name="CadastroMarcaDadosBasicos_title_nomemarca">Nome da marca</string>
+    <string name="mensagem_marcacadastradasucesso">Marca cadastrada com sucesso!</string>
+    <string name="mensagem_marcaalteradasucesso">Marca alterada com sucesso!</string>
+    <string name="mensagem_marcaexcluidasucesso">Marca excluída com sucesso!</string>
+    <string name="mensagem_confirmacaoexclusao">Você tem certeza que deseja excluir este registro?</string>
+    <string name="botaoSim">Sim</string>
+    <string name="botaoNao">Não</string>
 </resources>

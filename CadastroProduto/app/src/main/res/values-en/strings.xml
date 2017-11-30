@@ -16,10 +16,6 @@
     <string name="CadastroProdutoDadosBasicos_title_marcaproduto">Product brand</string>
     <string-array name="CadastroProdutoDadosBasicos_array_marcas">
         <item>Select a brand</item>
-        <item>Apple</item>
-        <item>Kingston</item>
-        <item>Microsoft</item>
-        <item>Sony</item>
     </string-array>
     <string name="CadastroProdutoDadosBasicos_title_nomeproduto">Product name</string>
     <string name="MainActivity_btnCadastrarProduto">Register a new product</string>
@@ -82,4 +78,19 @@
         <item>BRL</item>
         <item>USD</item>
     </string-array>
+    <string name="ItemListaProduto_title_nenhumproduto">No product found</string>
+    <string name="ItemListaProduto_title_nenhumamarca">No brand found</string>
+    <string name="ItemListaMarca_title_nenhumamarca">No brand found</string>
+    <string name="MainActivity_btnCadastrarMarca">Register brand</string>
+    <string name="MainActivity_btnMarcas">Brands</string>
+    <string name="MainActivity_btnProdutos">Products</string>
+    <string name="title_fragmentdadosbasicosmarca">Basic information</string>
+    <string name="CadastroMarcaDadosBasicos_hint_nomemarca">Ex: Apple</string>
+    <string name="CadastroMarcaDadosBasicos_title_nomemarca">Brand name</string>
+    <string name="mensagem_marcacadastradasucesso">Brand registered sucessfully!</string>
+    <string name="mensagem_marcaalteradasucesso">Brand modified sucessfully!</string>
+    <string name="mensagem_marcaexcluidasucesso">Brand has been sucessfully deleted!</string>
+    <string name="mensagem_confirmacaoexclusao">Are you sure you want to delete this?</string>
+    <string name="botaoSim">Yes</string>
+    <string name="botaoNao">No</string>
 </resources>

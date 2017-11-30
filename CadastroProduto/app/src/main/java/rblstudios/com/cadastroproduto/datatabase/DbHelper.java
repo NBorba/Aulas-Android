@@ -10,6 +10,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
+import rblstudios.com.cadastroproduto.model.Marca;
 import rblstudios.com.cadastroproduto.model.Produto;
 
 /**
@@ -28,6 +29,7 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         criaTabelaProduto(db);
+        criaTabelaMarca(db);
     }
 
     private void criaTabelaProduto(SQLiteDatabase db) {
@@ -40,6 +42,14 @@ public class DbHelper extends SQLiteOpenHelper {
                 + Produto.PRECO_VENDA + " DOUBLE, "
                 + Produto.IMAGEM + " BLOB, "
                 + Produto.ATIVO + " INT)";
+
+        db.execSQL(sql);
+    }
+
+    private void criaTabelaMarca(SQLiteDatabase db) {
+        String sql = "CREATE TABLE " + Marca.TABLE + "("
+                + Marca.ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + Marca.NOME + " VARCHAR(150))";
 
         db.execSQL(sql);
     }

@@ -28,13 +28,23 @@
             android:name=".view.CadastroProduto"
             android:configChanges="layoutDirection|locale" />
         <activity
+            android:name=".view.CadastroMarca"
+            android:configChanges="layoutDirection|locale" />
+        <activity
             android:name=".view.RevisaoDados"
             android:configChanges="layoutDirection|locale" />
         <activity
             android:name=".view.Configuracao"
             android:configChanges="layoutDirection|locale" />
-        <activity android:name=".view.AndroidDatabaseManager" />
-        <activity android:name=".view.ListagemProdutos"></activity>
+        <activity
+            android:name=".view.AndroidDatabaseManager"
+            android:configChanges="layoutDirection|locale" />
+        <activity
+            android:name=".view.ListagemProdutos"
+            android:configChanges="layoutDirection|locale" />
+        <activity
+            android:name=".view.ListagemMarcas"
+            android:configChanges="layoutDirection|locale" />
     </application>
 
 </manifest>

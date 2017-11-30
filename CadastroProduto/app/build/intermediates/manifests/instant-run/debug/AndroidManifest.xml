@@ -40,13 +40,23 @@
             android:name="rblstudios.com.cadastroproduto.view.CadastroProduto"
             android:configChanges="layoutDirection|locale" />
         <activity
+            android:name="rblstudios.com.cadastroproduto.view.CadastroMarca"
+            android:configChanges="layoutDirection|locale" />
+        <activity
             android:name="rblstudios.com.cadastroproduto.view.RevisaoDados"
             android:configChanges="layoutDirection|locale" />
         <activity
             android:name="rblstudios.com.cadastroproduto.view.Configuracao"
             android:configChanges="layoutDirection|locale" />
-        <activity android:name="rblstudios.com.cadastroproduto.view.AndroidDatabaseManager" />
-        <activity android:name="rblstudios.com.cadastroproduto.view.ListagemProdutos" />
+        <activity
+            android:name="rblstudios.com.cadastroproduto.view.AndroidDatabaseManager"
+            android:configChanges="layoutDirection|locale" />
+        <activity
+            android:name="rblstudios.com.cadastroproduto.view.ListagemProdutos"
+            android:configChanges="layoutDirection|locale" />
+        <activity
+            android:name="rblstudios.com.cadastroproduto.view.ListagemMarcas"
+            android:configChanges="layoutDirection|locale" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

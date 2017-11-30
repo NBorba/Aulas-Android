@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -23,6 +24,7 @@ import rblstudios.com.cadastroproduto.util.ViewUtil;
 
 public class ListagemProdutos extends AppCompatActivity {
 
+    private FloatingActionButton btnCadastrar;
     private RecyclerView recyclerProdutos;
     private String linguagem;
 
@@ -33,6 +35,7 @@ public class ListagemProdutos extends AppCompatActivity {
 
         encontrarViewsPorId();
         criaListProdutos();
+        criaListenerBotao();
     }
 
     @Override
@@ -54,6 +57,7 @@ public class ListagemProdutos extends AppCompatActivity {
     }
 
     private void encontrarViewsPorId() {
+        btnCadastrar = (FloatingActionButton) findViewById(R.id.ListagemProduto_btnCadastrarProduto);
         recyclerProdutos = (RecyclerView) findViewById(R.id.ListagemProduto_RecyclerViewProdutos);
     }
 
@@ -81,5 +85,15 @@ public class ListagemProdutos extends AppCompatActivity {
         });
 
         recyclerProdutos.setAdapter(adapterProdutosList);
+    }
+
+    private void criaListenerBotao() {
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListagemProdutos.this, CadastroProduto.class);
+                startActivity(intent);
+            }
+        });
     }
 }
