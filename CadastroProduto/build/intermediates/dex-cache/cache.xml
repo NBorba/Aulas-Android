@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/55b27813066563b7461ea017b43e199b/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/a05dce29f72f702430d3e8951e727fb3/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/893313148fc847c860ccc8a5476209d3/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/bcfd5b7674fb0eb458ad93662d37d694/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/e3505b731be5aa96b5d0e1c2ece8ab2a/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/f8da9acc79606542f6b9f9ff5dd0b3c7/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/482e353656daa820129b446af64c0b2f/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/percent-26.0.0-alpha1.aar/19267e37927ffc0724257f4347d5d43c/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fb5addcf29ec0f677346aa9f740c7d56f457a6d9">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/89b72863a565ccfaf294d0b4ddc2ba2e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/06dcccae956c872ddea0db494b958ed4/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/543d437325b8404ccdc3be842e30c075/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/994d50efd137144f01d35954f2aa708e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/bd493fd864e3ee04d4ca1e184b676061/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/b2e22b672417b60d41938a233ed26314/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/b01bad9f5c70cc5072dffb336204c711/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/b7773e244a71718c13aeafc9586fa982/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+
+</items>

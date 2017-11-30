@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/renanlucas/Desktop/Projetos-Renan/Aulas-Android/CadastroProduto/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v13/values-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/renanlucas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/893313148fc847c860ccc8a5476209d3/res/values-v13/values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        }
+    ]
+}

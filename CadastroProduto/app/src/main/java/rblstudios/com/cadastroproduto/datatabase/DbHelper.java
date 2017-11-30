@@ -19,7 +19,7 @@ import rblstudios.com.cadastroproduto.model.Produto;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     private static final String DATABASE_NAME = "app.db";
 
     public DbHelper(Context context) {
@@ -33,7 +33,7 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
     private void criaTabelaProduto(SQLiteDatabase db) {
-        String sql = "CREATE TABLE " + Produto.TABLE + "("
+        String sql = "CREATE TABLE IF NOT EXISTS " + Produto.TABLE + "("
                 + Produto.ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + Produto.NOME + " VARCHAR(150), "
                 + Produto.DESCRICAO + " VARCHAR(200), "
@@ -47,7 +47,7 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
     private void criaTabelaMarca(SQLiteDatabase db) {
-        String sql = "CREATE TABLE " + Marca.TABLE + "("
+        String sql = "CREATE TABLE IF NOT EXISTS " + Marca.TABLE + "("
                 + Marca.ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + Marca.NOME + " VARCHAR(150))";
 
@@ -56,9 +56,10 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String SQL_DELETE_TABLE = "DROP TABLE IF EXISTS " + Produto.TABLE;
-        db.execSQL(SQL_DELETE_TABLE);
-        onCreate(db);
+        switch (newVersion) {
+            case 2:
+                criaTabelaMarca(db);
+        }
     }
 
     // FUNÇÃO UTILIZADA POR "ANDROID DATABASE MANAGER" PARA VISUALIZAR BANCOS DE DADOS SQLITE, APAGAR EM PRODUÇÃO
